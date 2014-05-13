@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="pgK-EZ-kFd">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--Library View Controller - Free Tamil Ebooks-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FTELibraryViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vOg-F1-aum"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nch-RC-XP7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cMi-im-lNY">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RGZ-c9-JGo">
+                                    <size key="itemSize" width="170" height="225"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BookMetaCell" id="sHO-2f-kLc" customClass="FTEBookMetaCell">
+                                        <rect key="frame" x="0.0" y="64" width="170" height="225"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="170" height="225"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dzj-dd-Kna">
+                                                    <rect key="frame" x="20" y="0.0" width="130" height="167"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="160" translatesAutoresizingMaskIntoConstraints="NO" id="h35-QO-7Rv">
+                                                    <rect key="frame" x="2" y="170" width="160" height="55"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <outlet property="bookImg" destination="dzj-dd-Kna" id="5xv-8H-Kff"/>
+                                            <outlet property="lblTitle" destination="h35-QO-7Rv" id="OPV-oX-nfl"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="DSj-J7-R5n"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="oIb-OL-GxL"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="768" translatesAutoresizingMaskIntoConstraints="NO" id="URN-gX-Rmd">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Your library is empty.
+Start downloading some books!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Nch-RC-XP7" firstAttribute="top" secondItem="cMi-im-lNY" secondAttribute="bottom" id="2eB-V5-gVg"/>
+                            <constraint firstItem="cMi-im-lNY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5kr-Fu-lbL"/>
+                            <constraint firstItem="cMi-im-lNY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Hd1-2E-v0s"/>
+                            <constraint firstItem="cMi-im-lNY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Mj6-Zi-9xr"/>
+                            <constraint firstItem="cMi-im-lNY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YdH-v9-f12"/>
+                            <constraint firstAttribute="trailing" secondItem="cMi-im-lNY" secondAttribute="trailing" id="aNN-en-fSm"/>
+                            <constraint firstAttribute="trailing" secondItem="cMi-im-lNY" secondAttribute="trailing" id="bDF-lA-j1h"/>
+                            <constraint firstItem="Nch-RC-XP7" firstAttribute="top" secondItem="cMi-im-lNY" secondAttribute="bottom" id="dmu-rt-gt8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Free Tamil Ebooks" id="mzO-4k-Rkq">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="UUk-3W-H9W"/>
+                        <barButtonItem key="leftBarButtonItem" title="Settings" id="MpD-09-OJ6">
+                            <connections>
+                                <segue destination="baF-OI-z7X" kind="modal" identifier="LibraryToSettings" modalPresentationStyle="formSheet" id="2uF-r5-gL8"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Books" id="eyC-Gw-6xS">
+                            <connections>
+                                <segue destination="kBF-KT-C3f" kind="modal" identifier="LibraryToShop" modalPresentationStyle="formSheet" id="h8p-mE-N7b"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="cMi-im-lNY" id="lDe-q5-dTq"/>
+                        <outlet property="emptyTextLabel" destination="URN-gX-Rmd" id="NWC-mp-biE"/>
+                        <segue destination="fgO-0W-LxN" kind="push" identifier="LibraryToBookView" id="2SM-9n-n9f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1081" y="-281"/>
+        </scene>
+        <!--Settings View Controller - Settings-->
+        <scene sceneID="HTa-Aj-yzU">
+            <objects>
+                <viewController id="Zyd-qj-K0U" customClass="FTESettingsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="S3b-7O-ubU"/>
+                        <viewControllerLayoutGuide type="bottom" id="4bC-ZD-NcR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lOO-Av-Me9">
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="620"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Night Mode" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XaD-Wf-2LG">
+                                <rect key="frame" x="186" y="75" width="90" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v3h-cb-Ots">
+                                <rect key="frame" x="305" y="70" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="nightModeTapped:" destination="Zyd-qj-K0U" eventType="valueChanged" id="NrD-lo-bOw"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Free Tamil Ebooks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajZ-GC-NcV">
+                                <rect key="frame" x="117" y="146" width="306" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="25"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="v1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tos-gf-EXB">
+                                <rect key="frame" x="117" y="173" width="306" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3J3-9Q-QAm">
+                                <rect key="frame" x="44" y="214" width="452" height="384"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTd-f4-Td8">
+                                <rect key="frame" x="181" y="105" width="178" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Reset Downloaded Books">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetTapped:" destination="Zyd-qj-K0U" eventType="touchUpInside" id="0Cm-4t-GGo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="whA-ZO-5Mh">
+                        <barButtonItem key="leftBarButtonItem" title="Close" id="3Yc-vB-Agy">
+                            <connections>
+                                <action selector="closeTapped:" destination="Zyd-qj-K0U" id="pGC-7P-khY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <modalFormSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="aboutTV" destination="3J3-9Q-QAm" id="qWg-HA-cqD"/>
+                        <outlet property="lblVersion" destination="Tos-gf-EXB" id="gDg-hu-eCb"/>
+                        <outlet property="nightModeSwitch" destination="v3h-cb-Ots" id="fmE-Ih-jkW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kvq-pL-Tk1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1947" y="1002"/>
+        </scene>
+        <!--Shop View Controller - Books-->
+        <scene sceneID="eCC-Kx-RVA">
+            <objects>
+                <viewController storyboardIdentifier="FTEShopViewController" id="JB9-Og-EGb" customClass="FTEShopViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ru1-op-6F0"/>
+                        <viewControllerLayoutGuide type="bottom" id="B6Q-yW-i8C"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CP3-F5-7bT">
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="620"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4nl-xh-WPR">
+                                <rect key="frame" x="0.0" y="0.0" width="540" height="620"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TBu-Hk-qw1">
+                                    <size key="itemSize" width="170" height="225"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="17" minY="15" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BookMetaCell" id="lT9-fX-xql" customClass="FTEBookMetaCell">
+                                        <rect key="frame" x="17" y="59" width="170" height="225"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="170" height="225"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mZV-hW-ebF">
+                                                    <rect key="frame" x="20" y="0.0" width="124" height="150"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="150" translatesAutoresizingMaskIntoConstraints="NO" id="JML-EB-9Jr">
+                                                    <rect key="frame" x="7" y="146" width="150" height="79"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="13"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fsn-y7-8uC">
+                                                    <rect key="frame" x="122" y="120" width="40" height="40"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <outlet property="bookImg" destination="mZV-hW-ebF" id="foP-tI-93o"/>
+                                            <outlet property="downloadIndicator" destination="Fsn-y7-8uC" id="8Q1-Ly-qqb"/>
+                                            <outlet property="lblTitle" destination="JML-EB-9Jr" id="Qtc-X4-zub"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="JB9-Og-EGb" id="0vj-qT-qIf"/>
+                                    <outlet property="delegate" destination="JB9-Og-EGb" id="Dm9-t7-Q84"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4nl-xh-WPR" firstAttribute="leading" secondItem="CP3-F5-7bT" secondAttribute="leading" id="39Y-j8-OLc"/>
+                            <constraint firstItem="4nl-xh-WPR" firstAttribute="top" secondItem="CP3-F5-7bT" secondAttribute="top" id="Ao3-uE-CJu"/>
+                            <constraint firstItem="B6Q-yW-i8C" firstAttribute="top" secondItem="4nl-xh-WPR" secondAttribute="bottom" id="OkR-8i-TQ1"/>
+                            <constraint firstAttribute="trailing" secondItem="4nl-xh-WPR" secondAttribute="trailing" id="Otb-kg-S2i"/>
+                            <constraint firstAttribute="trailing" secondItem="4nl-xh-WPR" secondAttribute="trailing" id="Xm2-Ni-i7N"/>
+                            <constraint firstItem="4nl-xh-WPR" firstAttribute="top" secondItem="CP3-F5-7bT" secondAttribute="top" id="e3N-F8-3vr"/>
+                            <constraint firstItem="4nl-xh-WPR" firstAttribute="leading" secondItem="CP3-F5-7bT" secondAttribute="leading" id="eb0-Cp-ATj"/>
+                            <constraint firstItem="B6Q-yW-i8C" firstAttribute="top" secondItem="4nl-xh-WPR" secondAttribute="bottom" id="pgn-xr-4x1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Books" id="cn0-Ty-Uok">
+                        <barButtonItem key="leftBarButtonItem" title="Close" id="AaW-gh-T2C">
+                            <connections>
+                                <action selector="closeTapped:" destination="JB9-Og-EGb" id="w1s-Go-pOc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="4nl-xh-WPR" id="1Tb-lD-frb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pPQ-iw-wC1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3255" y="-242"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="a6C-cx-Ryx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pgK-EZ-kFd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SW5-NZ-YGo">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="4RR-D2-UT5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mwi-ua-36K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134" y="437"/>
+        </scene>
+        <!--Book View Controller-->
+        <scene sceneID="VvB-Gw-qc1">
+            <objects>
+                <viewController id="fgO-0W-LxN" customClass="FTEBookViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2fK-9G-VtM"/>
+                        <viewControllerLayoutGuide type="bottom" id="9KW-2G-3Qs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dGt-vg-si0">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="980"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qqv-rY-wPj">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1026"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="fgO-0W-LxN" id="PXv-Px-lQf"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Qqv-rY-wPj" firstAttribute="leading" secondItem="dGt-vg-si0" secondAttribute="leading" id="1Ff-cZ-89u"/>
+                            <constraint firstItem="Qqv-rY-wPj" firstAttribute="top" secondItem="dGt-vg-si0" secondAttribute="top" id="f4f-er-Vco"/>
+                            <constraint firstAttribute="bottom" secondItem="Qqv-rY-wPj" secondAttribute="bottom" constant="-46" id="qRQ-xf-FHH"/>
+                            <constraint firstAttribute="trailing" secondItem="Qqv-rY-wPj" secondAttribute="trailing" id="vKE-tk-cIj"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem image="settings" id="Osx-Sm-Zdi">
+                            <connections>
+                                <segue destination="baF-OI-z7X" kind="modal" identifier="BookViewToSettings" modalPresentationStyle="formSheet" id="wSS-Sd-qpI"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem width="258" style="plain" systemItem="fixedSpace" id="hIi-ly-5uV"/>
+                        <barButtonItem image="previous" id="exl-eX-yiO">
+                            <connections>
+                                <action selector="previousPageTapped:" destination="fgO-0W-LxN" id="jZ1-Ft-eMT"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem width="109" style="plain" systemItem="fixedSpace" id="nKV-iZ-XfG"/>
+                        <barButtonItem image="next" id="Dvy-ps-BdL">
+                            <connections>
+                                <action selector="nextPageTapped:" destination="fgO-0W-LxN" id="3aG-jU-HYd"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="abd-I9-M50"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <connections>
+                        <outlet property="bookView" destination="Qqv-rY-wPj" id="wGk-cc-zaU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Ep-9S-xWu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2083" y="-1526"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aBn-Jb-XeZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kBF-KT-C3f" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UTg-8Z-flo">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JB9-Og-EGb" kind="relationship" relationship="rootViewController" id="zm7-6c-Snr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T5i-nA-EGQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2521" y="-242"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="n3S-bj-veD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="baF-OI-z7X" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <modalFormSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UPp-AO-Kx4">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Zyd-qj-K0U" kind="relationship" relationship="rootViewController" id="keg-ea-pVi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9FH-tO-f6O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1125" y="1002"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="next" width="25" height="25"/>
+        <image name="previous" width="25" height="25"/>
+        <image name="settings" width="25" height="25"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="2uF-r5-gL8"/>
+    </inferredMetricsTieBreakers>
+</document>

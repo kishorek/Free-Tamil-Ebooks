@@ -1,0 +1,882 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03289AF4188E53CD00E9DA55 /* FTEUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 03289AF3188E53CD00E9DA55 /* FTEUtilities.m */; };
+		03289AF8188E594800E9DA55 /* FTEBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 03289AF7188E594800E9DA55 /* FTEBook.m */; };
+		03289AFB188E598B00E9DA55 /* FTEBooksDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 03289AFA188E598B00E9DA55 /* FTEBooksDB.m */; };
+		032B2FEA188D2BCA006D906B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 032B2FE9188D2BCA006D906B /* Foundation.framework */; };
+		032B2FEC188D2BCA006D906B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 032B2FEB188D2BCA006D906B /* CoreGraphics.framework */; };
+		032B2FEE188D2BCA006D906B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 032B2FED188D2BCA006D906B /* UIKit.framework */; };
+		032B2FF4188D2BCA006D906B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 032B2FF2188D2BCA006D906B /* InfoPlist.strings */; };
+		032B2FF6188D2BCA006D906B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 032B2FF5188D2BCA006D906B /* main.m */; };
+		032B2FFA188D2BCA006D906B /* FTEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 032B2FF9188D2BCA006D906B /* FTEAppDelegate.m */; };
+		032B2FFD188D2BCA006D906B /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 032B2FFB188D2BCA006D906B /* Main_iPhone.storyboard */; };
+		032B3000188D2BCA006D906B /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 032B2FFE188D2BCA006D906B /* Main_iPad.storyboard */; };
+		032B3003188D2BCA006D906B /* FTEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 032B3002188D2BCA006D906B /* FTEViewController.m */; };
+		032B3005188D2BCA006D906B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 032B3004188D2BCA006D906B /* Images.xcassets */; };
+		032B300C188D2BCA006D906B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 032B300B188D2BCA006D906B /* XCTest.framework */; };
+		032B300D188D2BCA006D906B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 032B2FE9188D2BCA006D906B /* Foundation.framework */; };
+		032B300E188D2BCA006D906B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 032B2FED188D2BCA006D906B /* UIKit.framework */; };
+		032B3016188D2BCA006D906B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 032B3014188D2BCA006D906B /* InfoPlist.strings */; };
+		032B3018188D2BCA006D906B /* FreeTamilEbookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 032B3017188D2BCA006D906B /* FreeTamilEbookTests.m */; };
+		032B3035188D2C80006D906B /* Changelog.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 032B3026188D2C80006D906B /* Changelog.markdown */; };
+		032B3036188D2C80006D906B /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 032B3027188D2C80006D906B /* LICENSE */; };
+		032B3037188D2C80006D906B /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 032B302A188D2C80006D906B /* ioapi.c */; };
+		032B3038188D2C80006D906B /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 032B302C188D2C80006D906B /* mztools.c */; };
+		032B3039188D2C80006D906B /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 032B302E188D2C80006D906B /* unzip.c */; };
+		032B303A188D2C80006D906B /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 032B3030188D2C80006D906B /* zip.c */; };
+		032B303B188D2C80006D906B /* Readme.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 032B3032188D2C80006D906B /* Readme.markdown */; };
+		032B303C188D2C80006D906B /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 032B3034188D2C80006D906B /* SSZipArchive.m */; };
+		032B3040188D2D46006D906B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 032B303F188D2D46006D906B /* libz.dylib */; };
+		032B3050188D312A006D906B /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 032B304F188D312A006D906B /* XMLDictionary.m */; };
+		0338BD261890F38800008AAF /* FTESettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0338BD251890F38800008AAF /* FTESettingsViewController.m */; };
+		0399A5961891F14F0003F305 /* FTEBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0399A5951891F14F0003F305 /* FTEBaseViewController.m */; };
+		03CA6545188F7FC200C594FE /* FTEBookMeta.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CA6544188F7FC200C594FE /* FTEBookMeta.m */; };
+		03CA654F188F9A9800C594FE /* FTEBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CA654D188F9A9800C594FE /* FTEBookViewController.m */; };
+		03CA6553188F9ABD00C594FE /* FTEShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CA6552188F9ABD00C594FE /* FTEShopViewController.m */; };
+		03CA6556188FA0AD00C594FE /* FTEBookMetaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CA6555188FA0AD00C594FE /* FTEBookMetaCell.m */; };
+		03CA656B188FA16400C594FE /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CA6559188FA16400C594FE /* AFHTTPRequestOperation.m */; };
+		03CA656C188FA16400C594FE /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CA655B188FA16400C594FE /* AFHTTPRequestOperationManager.m */; };
+		03CA656D188FA16400C594FE /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CA655D188FA16400C594FE /* AFHTTPSessionManager.m */; };
+		03CA656E188FA16400C594FE /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CA6560188FA16400C594FE /* AFNetworkReachabilityManager.m */; };
+		03CA656F188FA16400C594FE /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CA6562188FA16400C594FE /* AFSecurityPolicy.m */; };
+		03CA6570188FA16400C594FE /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CA6564188FA16400C594FE /* AFURLConnectionOperation.m */; };
+		03CA6571188FA16400C594FE /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CA6566188FA16400C594FE /* AFURLRequestSerialization.m */; };
+		03CA6572188FA16400C594FE /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CA6568188FA16400C594FE /* AFURLResponseSerialization.m */; };
+		03CA6573188FA16400C594FE /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CA656A188FA16400C594FE /* AFURLSessionManager.m */; };
+		03CA6584188FA26D00C594FE /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CA6576188FA26D00C594FE /* AFNetworkActivityIndicatorManager.m */; };
+		03CA6585188FA26D00C594FE /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CA6578188FA26D00C594FE /* UIActivityIndicatorView+AFNetworking.m */; };
+		03CA6586188FA26D00C594FE /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CA657A188FA26D00C594FE /* UIAlertView+AFNetworking.m */; };
+		03CA6587188FA26D00C594FE /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CA657C188FA26D00C594FE /* UIButton+AFNetworking.m */; };
+		03CA6588188FA26D00C594FE /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CA657E188FA26D00C594FE /* UIImageView+AFNetworking.m */; };
+		03CA6589188FA26D00C594FE /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CA6581188FA26D00C594FE /* UIProgressView+AFNetworking.m */; };
+		03CA658A188FA26D00C594FE /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CA6583188FA26D00C594FE /* UIWebView+AFNetworking.m */; };
+		03CA6590188FB03F00C594FE /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 03CA658D188FB03F00C594FE /* SVProgressHUD.bundle */; };
+		03CA6591188FB03F00C594FE /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CA658F188FB03F00C594FE /* SVProgressHUD.m */; };
+		03CA6594188FBA7000C594FE /* FTELibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CA6593188FBA7000C594FE /* FTELibraryViewController.m */; };
+		03D5489518936BF2001B4F5E /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D5487C18936BF2001B4F5E /* Icon-Small.png */; };
+		03D5489618936BF2001B4F5E /* Icon-Spotlight-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D5487D18936BF2001B4F5E /* Icon-Spotlight-40@2x.png */; };
+		03D5489718936BF2001B4F5E /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D5487E18936BF2001B4F5E /* Icon-Small@2x.png */; };
+		03D5489818936BF2001B4F5E /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D5487F18936BF2001B4F5E /* Icon-60.png */; };
+		03D5489918936BF2001B4F5E /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D5488018936BF2001B4F5E /* Icon-60@2x.png */; };
+		03D5489A18936BF2001B4F5E /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D5488118936BF2001B4F5E /* Icon-76.png */; };
+		03D5489B18936BF2001B4F5E /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D5488218936BF2001B4F5E /* Icon-76@2x.png */; };
+		03D5489C18936BF2001B4F5E /* Icon-Spotlight-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D5488318936BF2001B4F5E /* Icon-Spotlight-40.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		032B300F188D2BCA006D906B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 032B2FDE188D2BCA006D906B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 032B2FE5188D2BCA006D906B;
+			remoteInfo = FreeTamilEbook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03289AF2188E53CD00E9DA55 /* FTEUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTEUtilities.h; sourceTree = "<group>"; };
+		03289AF3188E53CD00E9DA55 /* FTEUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTEUtilities.m; sourceTree = "<group>"; };
+		03289AF6188E594800E9DA55 /* FTEBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTEBook.h; sourceTree = "<group>"; };
+		03289AF7188E594800E9DA55 /* FTEBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTEBook.m; sourceTree = "<group>"; };
+		03289AF9188E598B00E9DA55 /* FTEBooksDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTEBooksDB.h; sourceTree = "<group>"; };
+		03289AFA188E598B00E9DA55 /* FTEBooksDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTEBooksDB.m; sourceTree = "<group>"; };
+		032B2FE6188D2BCA006D906B /* fteapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fteapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		032B2FE9188D2BCA006D906B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		032B2FEB188D2BCA006D906B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		032B2FED188D2BCA006D906B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		032B2FF1188D2BCA006D906B /* FreeTamilEbook-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FreeTamilEbook-Info.plist"; sourceTree = "<group>"; };
+		032B2FF3188D2BCA006D906B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		032B2FF5188D2BCA006D906B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		032B2FF7188D2BCA006D906B /* FreeTamilEbook-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FreeTamilEbook-Prefix.pch"; sourceTree = "<group>"; };
+		032B2FF8188D2BCA006D906B /* FTEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTEAppDelegate.h; sourceTree = "<group>"; };
+		032B2FF9188D2BCA006D906B /* FTEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTEAppDelegate.m; sourceTree = "<group>"; };
+		032B2FFC188D2BCA006D906B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		032B2FFF188D2BCA006D906B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		032B3001188D2BCA006D906B /* FTEViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTEViewController.h; sourceTree = "<group>"; };
+		032B3002188D2BCA006D906B /* FTEViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTEViewController.m; sourceTree = "<group>"; };
+		032B3004188D2BCA006D906B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		032B300A188D2BCA006D906B /* FreeTamilEbookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeTamilEbookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		032B300B188D2BCA006D906B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		032B3013188D2BCA006D906B /* FreeTamilEbookTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FreeTamilEbookTests-Info.plist"; sourceTree = "<group>"; };
+		032B3015188D2BCA006D906B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		032B3017188D2BCA006D906B /* FreeTamilEbookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FreeTamilEbookTests.m; sourceTree = "<group>"; };
+		032B3026188D2C80006D906B /* Changelog.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Changelog.markdown; sourceTree = "<group>"; };
+		032B3027188D2C80006D906B /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		032B3029188D2C80006D906B /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		032B302A188D2C80006D906B /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		032B302B188D2C80006D906B /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		032B302C188D2C80006D906B /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		032B302D188D2C80006D906B /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		032B302E188D2C80006D906B /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		032B302F188D2C80006D906B /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		032B3030188D2C80006D906B /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		032B3031188D2C80006D906B /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		032B3032188D2C80006D906B /* Readme.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.markdown; sourceTree = "<group>"; };
+		032B3033188D2C80006D906B /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
+		032B3034188D2C80006D906B /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
+		032B303F188D2D46006D906B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		032B304E188D312A006D906B /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDictionary.h; sourceTree = "<group>"; };
+		032B304F188D312A006D906B /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDictionary.m; sourceTree = "<group>"; };
+		0338BD241890F38800008AAF /* FTESettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTESettingsViewController.h; sourceTree = "<group>"; };
+		0338BD251890F38800008AAF /* FTESettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTESettingsViewController.m; sourceTree = "<group>"; };
+		0399A5941891F14F0003F305 /* FTEBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTEBaseViewController.h; sourceTree = "<group>"; };
+		0399A5951891F14F0003F305 /* FTEBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTEBaseViewController.m; sourceTree = "<group>"; };
+		03CA6543188F7FC200C594FE /* FTEBookMeta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTEBookMeta.h; sourceTree = "<group>"; };
+		03CA6544188F7FC200C594FE /* FTEBookMeta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTEBookMeta.m; sourceTree = "<group>"; };
+		03CA654C188F9A9800C594FE /* FTEBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTEBookViewController.h; sourceTree = "<group>"; };
+		03CA654D188F9A9800C594FE /* FTEBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTEBookViewController.m; sourceTree = "<group>"; };
+		03CA6551188F9ABD00C594FE /* FTEShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTEShopViewController.h; sourceTree = "<group>"; };
+		03CA6552188F9ABD00C594FE /* FTEShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTEShopViewController.m; sourceTree = "<group>"; };
+		03CA6554188FA0AD00C594FE /* FTEBookMetaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTEBookMetaCell.h; sourceTree = "<group>"; };
+		03CA6555188FA0AD00C594FE /* FTEBookMetaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTEBookMetaCell.m; sourceTree = "<group>"; };
+		03CA6558188FA16400C594FE /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		03CA6559188FA16400C594FE /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		03CA655A188FA16400C594FE /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		03CA655B188FA16400C594FE /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		03CA655C188FA16400C594FE /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		03CA655D188FA16400C594FE /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		03CA655E188FA16400C594FE /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		03CA655F188FA16400C594FE /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		03CA6560188FA16400C594FE /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		03CA6561188FA16400C594FE /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		03CA6562188FA16400C594FE /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		03CA6563188FA16400C594FE /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		03CA6564188FA16400C594FE /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		03CA6565188FA16400C594FE /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		03CA6566188FA16400C594FE /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		03CA6567188FA16400C594FE /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		03CA6568188FA16400C594FE /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		03CA6569188FA16400C594FE /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		03CA656A188FA16400C594FE /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		03CA6575188FA26D00C594FE /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		03CA6576188FA26D00C594FE /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		03CA6577188FA26D00C594FE /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		03CA6578188FA26D00C594FE /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		03CA6579188FA26D00C594FE /* UIAlertView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+AFNetworking.h"; sourceTree = "<group>"; };
+		03CA657A188FA26D00C594FE /* UIAlertView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+AFNetworking.m"; sourceTree = "<group>"; };
+		03CA657B188FA26D00C594FE /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		03CA657C188FA26D00C594FE /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		03CA657D188FA26D00C594FE /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		03CA657E188FA26D00C594FE /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		03CA657F188FA26D00C594FE /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		03CA6580188FA26D00C594FE /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		03CA6581188FA26D00C594FE /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		03CA6582188FA26D00C594FE /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		03CA6583188FA26D00C594FE /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		03CA658C188FB03F00C594FE /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		03CA658D188FB03F00C594FE /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		03CA658E188FB03F00C594FE /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		03CA658F188FB03F00C594FE /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		03CA6592188FBA7000C594FE /* FTELibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTELibraryViewController.h; sourceTree = "<group>"; };
+		03CA6593188FBA7000C594FE /* FTELibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTELibraryViewController.m; sourceTree = "<group>"; };
+		03D5487C18936BF2001B4F5E /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		03D5487D18936BF2001B4F5E /* Icon-Spotlight-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Spotlight-40@2x.png"; sourceTree = "<group>"; };
+		03D5487E18936BF2001B4F5E /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		03D5487F18936BF2001B4F5E /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
+		03D5488018936BF2001B4F5E /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		03D5488118936BF2001B4F5E /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		03D5488218936BF2001B4F5E /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		03D5488318936BF2001B4F5E /* Icon-Spotlight-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Spotlight-40.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		032B2FE3188D2BCA006D906B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				032B3040188D2D46006D906B /* libz.dylib in Frameworks */,
+				032B2FEC188D2BCA006D906B /* CoreGraphics.framework in Frameworks */,
+				032B2FEE188D2BCA006D906B /* UIKit.framework in Frameworks */,
+				032B2FEA188D2BCA006D906B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		032B3007188D2BCA006D906B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				032B300C188D2BCA006D906B /* XCTest.framework in Frameworks */,
+				032B300E188D2BCA006D906B /* UIKit.framework in Frameworks */,
+				032B300D188D2BCA006D906B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03289AF5188E593D00E9DA55 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				03289AF6188E594800E9DA55 /* FTEBook.h */,
+				03289AF7188E594800E9DA55 /* FTEBook.m */,
+				03289AF9188E598B00E9DA55 /* FTEBooksDB.h */,
+				03289AFA188E598B00E9DA55 /* FTEBooksDB.m */,
+				03CA6543188F7FC200C594FE /* FTEBookMeta.h */,
+				03CA6544188F7FC200C594FE /* FTEBookMeta.m */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		032B2FDD188D2BCA006D906B = {
+			isa = PBXGroup;
+			children = (
+				03D5487C18936BF2001B4F5E /* Icon-Small.png */,
+				03D5487D18936BF2001B4F5E /* Icon-Spotlight-40@2x.png */,
+				03D5487E18936BF2001B4F5E /* Icon-Small@2x.png */,
+				03D5487F18936BF2001B4F5E /* Icon-60.png */,
+				03D5488018936BF2001B4F5E /* Icon-60@2x.png */,
+				03D5488118936BF2001B4F5E /* Icon-76.png */,
+				03D5488218936BF2001B4F5E /* Icon-76@2x.png */,
+				03D5488318936BF2001B4F5E /* Icon-Spotlight-40.png */,
+				032B2FEF188D2BCA006D906B /* FreeTamilEbook */,
+				032B3011188D2BCA006D906B /* FreeTamilEbookTests */,
+				032B2FE8188D2BCA006D906B /* Frameworks */,
+				032B2FE7188D2BCA006D906B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		032B2FE7188D2BCA006D906B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				032B2FE6188D2BCA006D906B /* fteapp.app */,
+				032B300A188D2BCA006D906B /* FreeTamilEbookTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		032B2FE8188D2BCA006D906B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				032B303F188D2D46006D906B /* libz.dylib */,
+				032B2FE9188D2BCA006D906B /* Foundation.framework */,
+				032B2FEB188D2BCA006D906B /* CoreGraphics.framework */,
+				032B2FED188D2BCA006D906B /* UIKit.framework */,
+				032B300B188D2BCA006D906B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		032B2FEF188D2BCA006D906B /* FreeTamilEbook */ = {
+			isa = PBXGroup;
+			children = (
+				032B3021188D2BF0006D906B /* code */,
+				032B2FF8188D2BCA006D906B /* FTEAppDelegate.h */,
+				032B2FF9188D2BCA006D906B /* FTEAppDelegate.m */,
+				032B2FFB188D2BCA006D906B /* Main_iPhone.storyboard */,
+				032B2FFE188D2BCA006D906B /* Main_iPad.storyboard */,
+				032B3001188D2BCA006D906B /* FTEViewController.h */,
+				032B3002188D2BCA006D906B /* FTEViewController.m */,
+				032B3004188D2BCA006D906B /* Images.xcassets */,
+				032B2FF0188D2BCA006D906B /* Supporting Files */,
+			);
+			path = FreeTamilEbook;
+			sourceTree = "<group>";
+		};
+		032B2FF0188D2BCA006D906B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				032B2FF1188D2BCA006D906B /* FreeTamilEbook-Info.plist */,
+				032B2FF2188D2BCA006D906B /* InfoPlist.strings */,
+				032B2FF5188D2BCA006D906B /* main.m */,
+				032B2FF7188D2BCA006D906B /* FreeTamilEbook-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		032B3011188D2BCA006D906B /* FreeTamilEbookTests */ = {
+			isa = PBXGroup;
+			children = (
+				032B3017188D2BCA006D906B /* FreeTamilEbookTests.m */,
+				032B3012188D2BCA006D906B /* Supporting Files */,
+			);
+			path = FreeTamilEbookTests;
+			sourceTree = "<group>";
+		};
+		032B3012188D2BCA006D906B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				032B3013188D2BCA006D906B /* FreeTamilEbookTests-Info.plist */,
+				032B3014188D2BCA006D906B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		032B3021188D2BF0006D906B /* code */ = {
+			isa = PBXGroup;
+			children = (
+				03289AF5188E593D00E9DA55 /* models */,
+				032B3022188D2BF0006D906B /* common */,
+				032B3023188D2BF0006D906B /* screens */,
+				032B3024188D2BF0006D906B /* thirdparty */,
+			);
+			path = code;
+			sourceTree = "<group>";
+		};
+		032B3022188D2BF0006D906B /* common */ = {
+			isa = PBXGroup;
+			children = (
+				03289AF2188E53CD00E9DA55 /* FTEUtilities.h */,
+				03289AF3188E53CD00E9DA55 /* FTEUtilities.m */,
+				0399A5941891F14F0003F305 /* FTEBaseViewController.h */,
+				0399A5951891F14F0003F305 /* FTEBaseViewController.m */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		032B3023188D2BF0006D906B /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				0338BD231890F37E00008AAF /* Settings */,
+				03CA6550188F9AAB00C594FE /* Shop */,
+				03CA654B188F9A9800C594FE /* BookViewer */,
+				03CA654E188F9A9800C594FE /* Library */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+		032B3024188D2BF0006D906B /* thirdparty */ = {
+			isa = PBXGroup;
+			children = (
+				03CA658B188FB03F00C594FE /* SVProgressHUD */,
+				03CA6574188FA26D00C594FE /* UIKit+AFNetworking */,
+				03CA6557188FA16400C594FE /* AFNetworking */,
+				032B304D188D312A006D906B /* XMLDictionary */,
+				032B3025188D2C80006D906B /* ssziparchive */,
+			);
+			path = thirdparty;
+			sourceTree = "<group>";
+		};
+		032B3025188D2C80006D906B /* ssziparchive */ = {
+			isa = PBXGroup;
+			children = (
+				032B3026188D2C80006D906B /* Changelog.markdown */,
+				032B3027188D2C80006D906B /* LICENSE */,
+				032B3028188D2C80006D906B /* minizip */,
+				032B3032188D2C80006D906B /* Readme.markdown */,
+				032B3033188D2C80006D906B /* SSZipArchive.h */,
+				032B3034188D2C80006D906B /* SSZipArchive.m */,
+			);
+			path = ssziparchive;
+			sourceTree = "<group>";
+		};
+		032B3028188D2C80006D906B /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				032B3029188D2C80006D906B /* crypt.h */,
+				032B302A188D2C80006D906B /* ioapi.c */,
+				032B302B188D2C80006D906B /* ioapi.h */,
+				032B302C188D2C80006D906B /* mztools.c */,
+				032B302D188D2C80006D906B /* mztools.h */,
+				032B302E188D2C80006D906B /* unzip.c */,
+				032B302F188D2C80006D906B /* unzip.h */,
+				032B3030188D2C80006D906B /* zip.c */,
+				032B3031188D2C80006D906B /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		032B304D188D312A006D906B /* XMLDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				032B304E188D312A006D906B /* XMLDictionary.h */,
+				032B304F188D312A006D906B /* XMLDictionary.m */,
+			);
+			path = XMLDictionary;
+			sourceTree = "<group>";
+		};
+		0338BD231890F37E00008AAF /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				0338BD241890F38800008AAF /* FTESettingsViewController.h */,
+				0338BD251890F38800008AAF /* FTESettingsViewController.m */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		03CA654B188F9A9800C594FE /* BookViewer */ = {
+			isa = PBXGroup;
+			children = (
+				03CA654C188F9A9800C594FE /* FTEBookViewController.h */,
+				03CA654D188F9A9800C594FE /* FTEBookViewController.m */,
+			);
+			path = BookViewer;
+			sourceTree = "<group>";
+		};
+		03CA654E188F9A9800C594FE /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				03CA6592188FBA7000C594FE /* FTELibraryViewController.h */,
+				03CA6593188FBA7000C594FE /* FTELibraryViewController.m */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		03CA6550188F9AAB00C594FE /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				03CA6551188F9ABD00C594FE /* FTEShopViewController.h */,
+				03CA6552188F9ABD00C594FE /* FTEShopViewController.m */,
+				03CA6554188FA0AD00C594FE /* FTEBookMetaCell.h */,
+				03CA6555188FA0AD00C594FE /* FTEBookMetaCell.m */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		03CA6557188FA16400C594FE /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				03CA6558188FA16400C594FE /* AFHTTPRequestOperation.h */,
+				03CA6559188FA16400C594FE /* AFHTTPRequestOperation.m */,
+				03CA655A188FA16400C594FE /* AFHTTPRequestOperationManager.h */,
+				03CA655B188FA16400C594FE /* AFHTTPRequestOperationManager.m */,
+				03CA655C188FA16400C594FE /* AFHTTPSessionManager.h */,
+				03CA655D188FA16400C594FE /* AFHTTPSessionManager.m */,
+				03CA655E188FA16400C594FE /* AFNetworking.h */,
+				03CA655F188FA16400C594FE /* AFNetworkReachabilityManager.h */,
+				03CA6560188FA16400C594FE /* AFNetworkReachabilityManager.m */,
+				03CA6561188FA16400C594FE /* AFSecurityPolicy.h */,
+				03CA6562188FA16400C594FE /* AFSecurityPolicy.m */,
+				03CA6563188FA16400C594FE /* AFURLConnectionOperation.h */,
+				03CA6564188FA16400C594FE /* AFURLConnectionOperation.m */,
+				03CA6565188FA16400C594FE /* AFURLRequestSerialization.h */,
+				03CA6566188FA16400C594FE /* AFURLRequestSerialization.m */,
+				03CA6567188FA16400C594FE /* AFURLResponseSerialization.h */,
+				03CA6568188FA16400C594FE /* AFURLResponseSerialization.m */,
+				03CA6569188FA16400C594FE /* AFURLSessionManager.h */,
+				03CA656A188FA16400C594FE /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		03CA6574188FA26D00C594FE /* UIKit+AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				03CA6575188FA26D00C594FE /* AFNetworkActivityIndicatorManager.h */,
+				03CA6576188FA26D00C594FE /* AFNetworkActivityIndicatorManager.m */,
+				03CA6577188FA26D00C594FE /* UIActivityIndicatorView+AFNetworking.h */,
+				03CA6578188FA26D00C594FE /* UIActivityIndicatorView+AFNetworking.m */,
+				03CA6579188FA26D00C594FE /* UIAlertView+AFNetworking.h */,
+				03CA657A188FA26D00C594FE /* UIAlertView+AFNetworking.m */,
+				03CA657B188FA26D00C594FE /* UIButton+AFNetworking.h */,
+				03CA657C188FA26D00C594FE /* UIButton+AFNetworking.m */,
+				03CA657D188FA26D00C594FE /* UIImageView+AFNetworking.h */,
+				03CA657E188FA26D00C594FE /* UIImageView+AFNetworking.m */,
+				03CA657F188FA26D00C594FE /* UIKit+AFNetworking.h */,
+				03CA6580188FA26D00C594FE /* UIProgressView+AFNetworking.h */,
+				03CA6581188FA26D00C594FE /* UIProgressView+AFNetworking.m */,
+				03CA6582188FA26D00C594FE /* UIWebView+AFNetworking.h */,
+				03CA6583188FA26D00C594FE /* UIWebView+AFNetworking.m */,
+			);
+			path = "UIKit+AFNetworking";
+			sourceTree = "<group>";
+		};
+		03CA658B188FB03F00C594FE /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				03CA658C188FB03F00C594FE /* SVProgressHUD-Prefix.pch */,
+				03CA658D188FB03F00C594FE /* SVProgressHUD.bundle */,
+				03CA658E188FB03F00C594FE /* SVProgressHUD.h */,
+				03CA658F188FB03F00C594FE /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		032B2FE5188D2BCA006D906B /* FreeTamilEbook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 032B301B188D2BCA006D906B /* Build configuration list for PBXNativeTarget "FreeTamilEbook" */;
+			buildPhases = (
+				032B2FE2188D2BCA006D906B /* Sources */,
+				032B2FE3188D2BCA006D906B /* Frameworks */,
+				032B2FE4188D2BCA006D906B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FreeTamilEbook;
+			productName = FreeTamilEbook;
+			productReference = 032B2FE6188D2BCA006D906B /* fteapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		032B3009188D2BCA006D906B /* FreeTamilEbookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 032B301E188D2BCA006D906B /* Build configuration list for PBXNativeTarget "FreeTamilEbookTests" */;
+			buildPhases = (
+				032B3006188D2BCA006D906B /* Sources */,
+				032B3007188D2BCA006D906B /* Frameworks */,
+				032B3008188D2BCA006D906B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				032B3010188D2BCA006D906B /* PBXTargetDependency */,
+			);
+			name = FreeTamilEbookTests;
+			productName = FreeTamilEbookTests;
+			productReference = 032B300A188D2BCA006D906B /* FreeTamilEbookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		032B2FDE188D2BCA006D906B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FTE;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = KishoreK;
+				TargetAttributes = {
+					032B3009188D2BCA006D906B = {
+						TestTargetID = 032B2FE5188D2BCA006D906B;
+					};
+				};
+			};
+			buildConfigurationList = 032B2FE1188D2BCA006D906B /* Build configuration list for PBXProject "FreeTamilEbook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 032B2FDD188D2BCA006D906B;
+			productRefGroup = 032B2FE7188D2BCA006D906B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				032B2FE5188D2BCA006D906B /* FreeTamilEbook */,
+				032B3009188D2BCA006D906B /* FreeTamilEbookTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		032B2FE4188D2BCA006D906B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03D5489818936BF2001B4F5E /* Icon-60.png in Resources */,
+				03D5489618936BF2001B4F5E /* Icon-Spotlight-40@2x.png in Resources */,
+				032B3036188D2C80006D906B /* LICENSE in Resources */,
+				032B303B188D2C80006D906B /* Readme.markdown in Resources */,
+				032B3000188D2BCA006D906B /* Main_iPad.storyboard in Resources */,
+				03D5489C18936BF2001B4F5E /* Icon-Spotlight-40.png in Resources */,
+				032B3005188D2BCA006D906B /* Images.xcassets in Resources */,
+				03D5489A18936BF2001B4F5E /* Icon-76.png in Resources */,
+				03D5489918936BF2001B4F5E /* Icon-60@2x.png in Resources */,
+				03D5489B18936BF2001B4F5E /* Icon-76@2x.png in Resources */,
+				03D5489718936BF2001B4F5E /* Icon-Small@2x.png in Resources */,
+				03D5489518936BF2001B4F5E /* Icon-Small.png in Resources */,
+				03CA6590188FB03F00C594FE /* SVProgressHUD.bundle in Resources */,
+				032B3035188D2C80006D906B /* Changelog.markdown in Resources */,
+				032B2FFD188D2BCA006D906B /* Main_iPhone.storyboard in Resources */,
+				032B2FF4188D2BCA006D906B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		032B3008188D2BCA006D906B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				032B3016188D2BCA006D906B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		032B2FE2188D2BCA006D906B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03CA6573188FA16400C594FE /* AFURLSessionManager.m in Sources */,
+				03CA6588188FA26D00C594FE /* UIImageView+AFNetworking.m in Sources */,
+				03CA6570188FA16400C594FE /* AFURLConnectionOperation.m in Sources */,
+				03289AF4188E53CD00E9DA55 /* FTEUtilities.m in Sources */,
+				03CA6594188FBA7000C594FE /* FTELibraryViewController.m in Sources */,
+				03CA658A188FA26D00C594FE /* UIWebView+AFNetworking.m in Sources */,
+				03CA656D188FA16400C594FE /* AFHTTPSessionManager.m in Sources */,
+				03CA656E188FA16400C594FE /* AFNetworkReachabilityManager.m in Sources */,
+				032B3039188D2C80006D906B /* unzip.c in Sources */,
+				032B3003188D2BCA006D906B /* FTEViewController.m in Sources */,
+				03289AFB188E598B00E9DA55 /* FTEBooksDB.m in Sources */,
+				032B2FFA188D2BCA006D906B /* FTEAppDelegate.m in Sources */,
+				03CA656F188FA16400C594FE /* AFSecurityPolicy.m in Sources */,
+				03CA6589188FA26D00C594FE /* UIProgressView+AFNetworking.m in Sources */,
+				032B3050188D312A006D906B /* XMLDictionary.m in Sources */,
+				0399A5961891F14F0003F305 /* FTEBaseViewController.m in Sources */,
+				03CA6587188FA26D00C594FE /* UIButton+AFNetworking.m in Sources */,
+				0338BD261890F38800008AAF /* FTESettingsViewController.m in Sources */,
+				032B3037188D2C80006D906B /* ioapi.c in Sources */,
+				03CA654F188F9A9800C594FE /* FTEBookViewController.m in Sources */,
+				03CA656C188FA16400C594FE /* AFHTTPRequestOperationManager.m in Sources */,
+				032B303C188D2C80006D906B /* SSZipArchive.m in Sources */,
+				032B303A188D2C80006D906B /* zip.c in Sources */,
+				03CA6591188FB03F00C594FE /* SVProgressHUD.m in Sources */,
+				03CA6586188FA26D00C594FE /* UIAlertView+AFNetworking.m in Sources */,
+				032B2FF6188D2BCA006D906B /* main.m in Sources */,
+				03CA6553188F9ABD00C594FE /* FTEShopViewController.m in Sources */,
+				03289AF8188E594800E9DA55 /* FTEBook.m in Sources */,
+				03CA6556188FA0AD00C594FE /* FTEBookMetaCell.m in Sources */,
+				032B3038188D2C80006D906B /* mztools.c in Sources */,
+				03CA6571188FA16400C594FE /* AFURLRequestSerialization.m in Sources */,
+				03CA6584188FA26D00C594FE /* AFNetworkActivityIndicatorManager.m in Sources */,
+				03CA656B188FA16400C594FE /* AFHTTPRequestOperation.m in Sources */,
+				03CA6585188FA26D00C594FE /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				03CA6572188FA16400C594FE /* AFURLResponseSerialization.m in Sources */,
+				03CA6545188F7FC200C594FE /* FTEBookMeta.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		032B3006188D2BCA006D906B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				032B3018188D2BCA006D906B /* FreeTamilEbookTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		032B3010188D2BCA006D906B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 032B2FE5188D2BCA006D906B /* FreeTamilEbook */;
+			targetProxy = 032B300F188D2BCA006D906B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		032B2FF2188D2BCA006D906B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				032B2FF3188D2BCA006D906B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		032B2FFB188D2BCA006D906B /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				032B2FFC188D2BCA006D906B /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		032B2FFE188D2BCA006D906B /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				032B2FFF188D2BCA006D906B /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		032B3014188D2BCA006D906B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				032B3015188D2BCA006D906B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		032B3019188D2BCA006D906B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		032B301A188D2BCA006D906B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		032B301C188D2BCA006D906B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "FreeTamilEbook/FreeTamilEbook-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/**",
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = "FreeTamilEbook/FreeTamilEbook-Info.plist";
+				PRODUCT_NAME = fteapp;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		032B301D188D2BCA006D906B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "FreeTamilEbook/FreeTamilEbook-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/**",
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = "FreeTamilEbook/FreeTamilEbook-Info.plist";
+				PRODUCT_NAME = fteapp;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		032B301F188D2BCA006D906B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FreeTamilEbook.app/FreeTamilEbook";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FreeTamilEbook/FreeTamilEbook-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FreeTamilEbookTests/FreeTamilEbookTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		032B3020188D2BCA006D906B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FreeTamilEbook.app/FreeTamilEbook";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FreeTamilEbook/FreeTamilEbook-Prefix.pch";
+				INFOPLIST_FILE = "FreeTamilEbookTests/FreeTamilEbookTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		032B2FE1188D2BCA006D906B /* Build configuration list for PBXProject "FreeTamilEbook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				032B3019188D2BCA006D906B /* Debug */,
+				032B301A188D2BCA006D906B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		032B301B188D2BCA006D906B /* Build configuration list for PBXNativeTarget "FreeTamilEbook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				032B301C188D2BCA006D906B /* Debug */,
+				032B301D188D2BCA006D906B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		032B301E188D2BCA006D906B /* Build configuration list for PBXNativeTarget "FreeTamilEbookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				032B301F188D2BCA006D906B /* Debug */,
+				032B3020188D2BCA006D906B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 032B2FDE188D2BCA006D906B /* Project object */;
+}
