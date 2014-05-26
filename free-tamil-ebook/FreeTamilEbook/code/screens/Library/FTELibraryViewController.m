@@ -11,16 +11,31 @@
 #import "FTEShopViewController.h"
 #import "FTESettingsViewController.h"
 
-@interface FTELibraryViewController ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@interface FTELibraryViewController ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UIAlertViewDelegate, UIDocumentInteractionControllerDelegate>
 
 @property(nonatomic, strong) NSMutableArray *downloadedBooks;
 @property(nonatomic, strong) FTEBookMeta *currentBook;
 
 @property(nonatomic, assign) BOOL loadLastBook;
 
+@property (nonatomic, strong) UIDocumentInteractionController *docInteractionController;
+
 @end
 
 @implementation FTELibraryViewController
+
+- (void)setupDocumentControllerWithURL:(NSURL *)url
+{
+    if (self.docInteractionController == nil)
+    {
+        self.docInteractionController = [UIDocumentInteractionController interactionControllerWithURL:url];
+        self.docInteractionController.delegate = self;
+    }
+    else
+    {
+        self.docInteractionController.URL = url;
+    }
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -117,9 +132,31 @@
     }
 }
 
+#pragma mark - Alertview Delegate
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    
+}
+
+#pragma mark - UIDocumentInteractionController
+- (UIViewController *)documentInteractionControllerViewControllerForPreview:(UIDocumentInteractionController *)controller
+{
+    return self;
+}
+
+- (UIView *)documentInteractionControllerViewForPreview:(UIDocumentInteractionController *)controller
+{
+    return self.view;
+}
+
+- (CGRect)documentInteractionControllerRectForPreview:(UIDocumentInteractionController *)controller
+{
+    return self.view.frame;
+}
+
+
 #pragma mark - CollectionView Delegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    //[self downloadBook:self.downloadedBooks[indexPath.row]];
     self.currentBook = self.downloadedBooks[indexPath.row];
     [self performSegueWithIdentifier:@"LibraryToBookView" sender:self];
 }

@@ -141,13 +141,25 @@ Start downloading some books!</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3J3-9Q-QAm">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3J3-9Q-QAm">
                                 <rect key="frame" x="44" y="214" width="452" height="384"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <string key="text">"Free Tamil Ebooks" brings you the Creative Commons licenced Tamil ebooks.
+
+App developed by: @KishoreK
+For any app related queries contact: me@techlona.in
+
+Special thanks to Writer Payon (http://www.writerpayon.com/) for helping out with the Graphic works
+
+For more information about Free Tamil Ebooks (http://freetamilebooks.com):
+
+freetamilebooksteam@gmail.com
+https://www.facebook.com/FreeTamilEbooks
+https://plus.google.com/communities/108817760492177970948</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTd-f4-Td8">
                                 <rect key="frame" x="181" y="105" width="178" height="30"/>
@@ -172,6 +184,7 @@ Start downloading some books!</string>
                     <modalFormSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="aboutTV" destination="3J3-9Q-QAm" id="qWg-HA-cqD"/>
+                        <outlet property="btnReset" destination="CTd-f4-Td8" id="Mxo-4l-G4j"/>
                         <outlet property="lblVersion" destination="Tos-gf-EXB" id="gDg-hu-eCb"/>
                         <outlet property="nightModeSwitch" destination="v3h-cb-Ots" id="fmE-Ih-jkW"/>
                     </connections>
@@ -320,16 +333,22 @@ Start downloading some books!</string>
                                 <segue destination="baF-OI-z7X" kind="modal" identifier="BookViewToSettings" modalPresentationStyle="formSheet" id="wSS-Sd-qpI"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem width="258" style="plain" systemItem="fixedSpace" id="hIi-ly-5uV"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="MBQ-Uf-to4"/>
                         <barButtonItem image="previous" id="exl-eX-yiO">
                             <connections>
                                 <action selector="previousPageTapped:" destination="fgO-0W-LxN" id="jZ1-Ft-eMT"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem width="109" style="plain" systemItem="fixedSpace" id="nKV-iZ-XfG"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="6PK-qY-Jcd"/>
                         <barButtonItem image="next" id="Dvy-ps-BdL">
                             <connections>
                                 <action selector="nextPageTapped:" destination="fgO-0W-LxN" id="3aG-jU-HYd"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="HCC-hk-Olw"/>
+                        <barButtonItem systemItem="action" id="ZI7-kR-Ybb">
+                            <connections>
+                                <action selector="actionsTapped:" destination="fgO-0W-LxN" id="WAT-ww-pOT"/>
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
@@ -392,6 +411,6 @@ Start downloading some books!</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="2uF-r5-gL8"/>
+        <segue reference="wSS-Sd-qpI"/>
     </inferredMetricsTieBreakers>
 </document>

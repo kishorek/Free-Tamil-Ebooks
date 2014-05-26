@@ -35,7 +35,16 @@
 		032B303C188D2C80006D906B /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 032B3034188D2C80006D906B /* SSZipArchive.m */; };
 		032B3040188D2D46006D906B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 032B303F188D2D46006D906B /* libz.dylib */; };
 		032B3050188D312A006D906B /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 032B304F188D312A006D906B /* XMLDictionary.m */; };
+		0330BE1618C8AE310028D31D /* ftp-app-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0330BE1518C8AE310028D31D /* ftp-app-icon.png */; };
+		0330BE2C18C8BA370028D31D /* 320x480.png in Resources */ = {isa = PBXBuildFile; fileRef = 0330BE2518C8BA370028D31D /* 320x480.png */; };
+		0330BE2D18C8BA370028D31D /* 640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = 0330BE2618C8BA370028D31D /* 640x960.png */; };
+		0330BE2E18C8BA370028D31D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0330BE2718C8BA370028D31D /* Default-568h@2x.png */; };
+		0330BE2F18C8BA370028D31D /* ipad_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 0330BE2818C8BA370028D31D /* ipad_portrait.png */; };
+		0330BE3018C8BA370028D31D /* ipad_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 0330BE2918C8BA370028D31D /* ipad_landscape.png */; };
+		0330BE3118C8BA370028D31D /* ipad_portrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0330BE2A18C8BA370028D31D /* ipad_portrait@2x.png */; };
+		0330BE3218C8BA370028D31D /* ipad_landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0330BE2B18C8BA370028D31D /* ipad_landscape@2x.png */; };
 		0338BD261890F38800008AAF /* FTESettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0338BD251890F38800008AAF /* FTESettingsViewController.m */; };
+		0372481C18D284D5005481D4 /* NSFileManager+DoNotBackup.m in Sources */ = {isa = PBXBuildFile; fileRef = 0372481B18D284D5005481D4 /* NSFileManager+DoNotBackup.m */; };
 		0399A5961891F14F0003F305 /* FTEBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0399A5951891F14F0003F305 /* FTEBaseViewController.m */; };
 		03CA6545188F7FC200C594FE /* FTEBookMeta.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CA6544188F7FC200C594FE /* FTEBookMeta.m */; };
 		03CA654F188F9A9800C594FE /* FTEBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CA654D188F9A9800C594FE /* FTEBookViewController.m */; };
@@ -60,14 +69,6 @@
 		03CA6590188FB03F00C594FE /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 03CA658D188FB03F00C594FE /* SVProgressHUD.bundle */; };
 		03CA6591188FB03F00C594FE /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CA658F188FB03F00C594FE /* SVProgressHUD.m */; };
 		03CA6594188FBA7000C594FE /* FTELibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CA6593188FBA7000C594FE /* FTELibraryViewController.m */; };
-		03D5489518936BF2001B4F5E /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D5487C18936BF2001B4F5E /* Icon-Small.png */; };
-		03D5489618936BF2001B4F5E /* Icon-Spotlight-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D5487D18936BF2001B4F5E /* Icon-Spotlight-40@2x.png */; };
-		03D5489718936BF2001B4F5E /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D5487E18936BF2001B4F5E /* Icon-Small@2x.png */; };
-		03D5489818936BF2001B4F5E /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D5487F18936BF2001B4F5E /* Icon-60.png */; };
-		03D5489918936BF2001B4F5E /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D5488018936BF2001B4F5E /* Icon-60@2x.png */; };
-		03D5489A18936BF2001B4F5E /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D5488118936BF2001B4F5E /* Icon-76.png */; };
-		03D5489B18936BF2001B4F5E /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D5488218936BF2001B4F5E /* Icon-76@2x.png */; };
-		03D5489C18936BF2001B4F5E /* Icon-Spotlight-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D5488318936BF2001B4F5E /* Icon-Spotlight-40.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,8 +125,18 @@
 		032B303F188D2D46006D906B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		032B304E188D312A006D906B /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDictionary.h; sourceTree = "<group>"; };
 		032B304F188D312A006D906B /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDictionary.m; sourceTree = "<group>"; };
+		0330BE1518C8AE310028D31D /* ftp-app-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ftp-app-icon.png"; sourceTree = "<group>"; };
+		0330BE2518C8BA370028D31D /* 320x480.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 320x480.png; sourceTree = "<group>"; };
+		0330BE2618C8BA370028D31D /* 640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 640x960.png; sourceTree = "<group>"; };
+		0330BE2718C8BA370028D31D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		0330BE2818C8BA370028D31D /* ipad_portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ipad_portrait.png; sourceTree = "<group>"; };
+		0330BE2918C8BA370028D31D /* ipad_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ipad_landscape.png; sourceTree = "<group>"; };
+		0330BE2A18C8BA370028D31D /* ipad_portrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipad_portrait@2x.png"; sourceTree = "<group>"; };
+		0330BE2B18C8BA370028D31D /* ipad_landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipad_landscape@2x.png"; sourceTree = "<group>"; };
 		0338BD241890F38800008AAF /* FTESettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTESettingsViewController.h; sourceTree = "<group>"; };
 		0338BD251890F38800008AAF /* FTESettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTESettingsViewController.m; sourceTree = "<group>"; };
+		0372481A18D284D5005481D4 /* NSFileManager+DoNotBackup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+DoNotBackup.h"; sourceTree = "<group>"; };
+		0372481B18D284D5005481D4 /* NSFileManager+DoNotBackup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+DoNotBackup.m"; sourceTree = "<group>"; };
 		0399A5941891F14F0003F305 /* FTEBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTEBaseViewController.h; sourceTree = "<group>"; };
 		0399A5951891F14F0003F305 /* FTEBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTEBaseViewController.m; sourceTree = "<group>"; };
 		03CA6543188F7FC200C594FE /* FTEBookMeta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTEBookMeta.h; sourceTree = "<group>"; };
@@ -176,14 +187,6 @@
 		03CA658F188FB03F00C594FE /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		03CA6592188FBA7000C594FE /* FTELibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTELibraryViewController.h; sourceTree = "<group>"; };
 		03CA6593188FBA7000C594FE /* FTELibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTELibraryViewController.m; sourceTree = "<group>"; };
-		03D5487C18936BF2001B4F5E /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
-		03D5487D18936BF2001B4F5E /* Icon-Spotlight-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Spotlight-40@2x.png"; sourceTree = "<group>"; };
-		03D5487E18936BF2001B4F5E /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
-		03D5487F18936BF2001B4F5E /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
-		03D5488018936BF2001B4F5E /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
-		03D5488118936BF2001B4F5E /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
-		03D5488218936BF2001B4F5E /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
-		03D5488318936BF2001B4F5E /* Icon-Spotlight-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Spotlight-40.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,14 +230,6 @@
 		032B2FDD188D2BCA006D906B = {
 			isa = PBXGroup;
 			children = (
-				03D5487C18936BF2001B4F5E /* Icon-Small.png */,
-				03D5487D18936BF2001B4F5E /* Icon-Spotlight-40@2x.png */,
-				03D5487E18936BF2001B4F5E /* Icon-Small@2x.png */,
-				03D5487F18936BF2001B4F5E /* Icon-60.png */,
-				03D5488018936BF2001B4F5E /* Icon-60@2x.png */,
-				03D5488118936BF2001B4F5E /* Icon-76.png */,
-				03D5488218936BF2001B4F5E /* Icon-76@2x.png */,
-				03D5488318936BF2001B4F5E /* Icon-Spotlight-40.png */,
 				032B2FEF188D2BCA006D906B /* FreeTamilEbook */,
 				032B3011188D2BCA006D906B /* FreeTamilEbookTests */,
 				032B2FE8188D2BCA006D906B /* Frameworks */,
@@ -266,6 +261,14 @@
 		032B2FEF188D2BCA006D906B /* FreeTamilEbook */ = {
 			isa = PBXGroup;
 			children = (
+				0330BE2518C8BA370028D31D /* 320x480.png */,
+				0330BE2618C8BA370028D31D /* 640x960.png */,
+				0330BE2718C8BA370028D31D /* Default-568h@2x.png */,
+				0330BE2818C8BA370028D31D /* ipad_portrait.png */,
+				0330BE2918C8BA370028D31D /* ipad_landscape.png */,
+				0330BE2A18C8BA370028D31D /* ipad_portrait@2x.png */,
+				0330BE2B18C8BA370028D31D /* ipad_landscape@2x.png */,
+				0330BE1518C8AE310028D31D /* ftp-app-icon.png */,
 				032B3021188D2BF0006D906B /* code */,
 				032B2FF8188D2BCA006D906B /* FTEAppDelegate.h */,
 				032B2FF9188D2BCA006D906B /* FTEAppDelegate.m */,
@@ -344,6 +347,8 @@
 		032B3024188D2BF0006D906B /* thirdparty */ = {
 			isa = PBXGroup;
 			children = (
+				0372481A18D284D5005481D4 /* NSFileManager+DoNotBackup.h */,
+				0372481B18D284D5005481D4 /* NSFileManager+DoNotBackup.m */,
 				03CA658B188FB03F00C594FE /* SVProgressHUD */,
 				03CA6574188FA26D00C594FE /* UIKit+AFNetworking */,
 				03CA6557188FA16400C594FE /* AFNetworking */,
@@ -533,9 +538,12 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = FTE;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = KishoreK;
 				TargetAttributes = {
+					032B2FE5188D2BCA006D906B = {
+						DevelopmentTeam = C4369XQBXW;
+					};
 					032B3009188D2BCA006D906B = {
 						TestTargetID = 032B2FE5188D2BCA006D906B;
 					};
@@ -565,20 +573,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03D5489818936BF2001B4F5E /* Icon-60.png in Resources */,
-				03D5489618936BF2001B4F5E /* Icon-Spotlight-40@2x.png in Resources */,
+				0330BE2E18C8BA370028D31D /* Default-568h@2x.png in Resources */,
 				032B3036188D2C80006D906B /* LICENSE in Resources */,
 				032B303B188D2C80006D906B /* Readme.markdown in Resources */,
 				032B3000188D2BCA006D906B /* Main_iPad.storyboard in Resources */,
-				03D5489C18936BF2001B4F5E /* Icon-Spotlight-40.png in Resources */,
+				0330BE2F18C8BA370028D31D /* ipad_portrait.png in Resources */,
+				0330BE3218C8BA370028D31D /* ipad_landscape@2x.png in Resources */,
+				0330BE3018C8BA370028D31D /* ipad_landscape.png in Resources */,
 				032B3005188D2BCA006D906B /* Images.xcassets in Resources */,
-				03D5489A18936BF2001B4F5E /* Icon-76.png in Resources */,
-				03D5489918936BF2001B4F5E /* Icon-60@2x.png in Resources */,
-				03D5489B18936BF2001B4F5E /* Icon-76@2x.png in Resources */,
-				03D5489718936BF2001B4F5E /* Icon-Small@2x.png in Resources */,
-				03D5489518936BF2001B4F5E /* Icon-Small.png in Resources */,
+				0330BE2D18C8BA370028D31D /* 640x960.png in Resources */,
+				0330BE1618C8AE310028D31D /* ftp-app-icon.png in Resources */,
+				0330BE3118C8BA370028D31D /* ipad_portrait@2x.png in Resources */,
 				03CA6590188FB03F00C594FE /* SVProgressHUD.bundle in Resources */,
 				032B3035188D2C80006D906B /* Changelog.markdown in Resources */,
+				0330BE2C18C8BA370028D31D /* 320x480.png in Resources */,
 				032B2FFD188D2BCA006D906B /* Main_iPhone.storyboard in Resources */,
 				032B2FF4188D2BCA006D906B /* InfoPlist.strings in Resources */,
 			);
@@ -623,6 +631,7 @@
 				032B303C188D2C80006D906B /* SSZipArchive.m in Sources */,
 				032B303A188D2C80006D906B /* zip.c in Sources */,
 				03CA6591188FB03F00C594FE /* SVProgressHUD.m in Sources */,
+				0372481C18D284D5005481D4 /* NSFileManager+DoNotBackup.m in Sources */,
 				03CA6586188FA26D00C594FE /* UIAlertView+AFNetworking.m in Sources */,
 				032B2FF6188D2BCA006D906B /* main.m in Sources */,
 				03CA6553188F9ABD00C594FE /* FTEShopViewController.m in Sources */,
@@ -696,7 +705,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -727,6 +735,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "E5AF9E0F-5D73-42E6-9A38-B76FDE88B808";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -736,7 +745,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -749,7 +757,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Kishore Kumar (C4369XQBXW)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Kishore Kumar (C4369XQBXW)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -760,6 +769,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PROVISIONING_PROFILE = "E5AF9E0F-5D73-42E6-9A38-B76FDE88B808";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -769,8 +779,8 @@
 		032B301C188D2BCA006D906B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "FreeTamilEbook/FreeTamilEbook-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -788,8 +798,8 @@
 		032B301D188D2BCA006D906B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Kishore Kumar (C4369XQBXW)";
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "FreeTamilEbook/FreeTamilEbook-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -807,7 +817,6 @@
 		032B301F188D2BCA006D906B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FreeTamilEbook.app/FreeTamilEbook";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -830,7 +839,6 @@
 		032B3020188D2BCA006D906B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FreeTamilEbook.app/FreeTamilEbook";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

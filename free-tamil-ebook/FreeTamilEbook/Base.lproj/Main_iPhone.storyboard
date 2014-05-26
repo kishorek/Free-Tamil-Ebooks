@@ -217,16 +217,22 @@ Start downloading some books!</string>
                                 <segue destination="Tg7-oa-t2H" kind="modal" identifier="BookViewToSettings" id="4mV-Lu-GFn"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem width="63" style="plain" systemItem="fixedSpace" id="IgB-vN-hB9"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="cbq-Yl-vuQ"/>
                         <barButtonItem image="previous" id="DvJ-d7-99K">
                             <connections>
                                 <action selector="previousPageTapped:" destination="tXh-Hq-APV" id="Rhs-Id-EXQ"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="uxj-sr-5x5"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="dAz-JK-RQM"/>
                         <barButtonItem image="next" id="X2L-3B-GiG">
                             <connections>
                                 <action selector="nextPageTapped:" destination="tXh-Hq-APV" id="4RH-9r-5xK"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="fPj-jW-FnK"/>
+                        <barButtonItem systemItem="action" id="AH7-v7-HEq">
+                            <connections>
+                                <action selector="actionsTapped:" destination="tXh-Hq-APV" id="QhG-B5-uzy"/>
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
@@ -297,20 +303,31 @@ Start downloading some books!</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OXG-FP-c8u">
-                                <rect key="frame" x="10" y="221" width="300" height="313"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OXG-FP-c8u">
+                                <rect key="frame" x="10" y="216" width="300" height="337"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="L9U-J5-oL0"/>
+                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">Free Tamil Ebooks is bringing you free ebooks.
+                                        <string key="content">"Free Tamil Ebooks" brings you the Creative Commons licenced Tamil ebooks.
 
-http://freetamilebooks.com</string>
+App developed by: @KishoreK
+For any app related queries contact: me@techlona.in
+
+Special thanks to Writer Payon (http://www.writerpayon.com/) for helping out with the Graphic works
+
+For more information about Free Tamil Ebooks (http://freetamilebooks.com):
+Email: freetamilebooksteam@gmail.com
+Facebook: https://www.facebook.com/FreeTamilEbooks
+Google Plus: https://plus.google.com/communities/108817760492177970948</string>
                                         <attributes>
                                             <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                             <color key="NSColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="deviceRGB"/>
                                             <font key="NSFont" size="14" name="InaiMathi"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36">
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="22" defaultTabInterval="36">
                                                 <tabStops/>
                                             </paragraphStyle>
                                         </attributes>
@@ -331,6 +348,12 @@ http://freetamilebooks.com</string>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OXG-FP-c8u" firstAttribute="leading" secondItem="PDS-J4-sGu" secondAttribute="leading" constant="10" id="GIp-YK-A7u"/>
+                            <constraint firstItem="OXG-FP-c8u" firstAttribute="top" secondItem="HzJ-4I-VvP" secondAttribute="bottom" constant="152" id="TCN-YY-zAH"/>
+                            <constraint firstItem="2mH-VI-O6c" firstAttribute="top" secondItem="OXG-FP-c8u" secondAttribute="bottom" constant="15" id="jVU-7e-DqT"/>
+                            <constraint firstAttribute="trailing" secondItem="OXG-FP-c8u" secondAttribute="trailing" constant="10" id="un2-Ag-Y7z"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="tI0-IG-rJb">
                         <barButtonItem key="leftBarButtonItem" title="Close" id="id8-Ni-X6n">
@@ -341,6 +364,7 @@ http://freetamilebooks.com</string>
                     </navigationItem>
                     <connections>
                         <outlet property="aboutTV" destination="OXG-FP-c8u" id="fMn-e5-MgW"/>
+                        <outlet property="btnReset" destination="KN6-DX-0sw" id="SVc-9c-kmU"/>
                         <outlet property="lblVersion" destination="SgR-t7-fkg" id="wTK-4U-zJk"/>
                         <outlet property="nightModeSwitch" destination="G54-75-b1f" id="3JA-tJ-Eep"/>
                     </connections>

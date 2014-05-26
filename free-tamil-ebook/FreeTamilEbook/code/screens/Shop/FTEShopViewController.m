@@ -167,6 +167,7 @@ static NSString * const xmlDBPath = @"http://dev.techlona.in/fteappdata/data.php
     NSFileManager *fm = [NSFileManager defaultManager];
     NSError *error;
     [fm moveItemAtPath:filePath toPath:libPath error:&error];
+    //[fm addSkipBackupAttributeToItemAtURL:[NSURL fileURLWithPath:filePath isDirectory:NO]];
 }
 
 -(void) loadAvailableBooks{
@@ -183,7 +184,10 @@ static NSString * const xmlDBPath = @"http://dev.techlona.in/fteappdata/data.php
         return [documentsDirectoryPath URLByAppendingPathComponent:@"booksdb.xml"];//[response suggestedFilename]];
     } completionHandler:^(NSURLResponse *response, NSURL *filePath, NSError *error) {
         [SVProgressHUD dismiss];
-        NSLog(@"File downloaded to: %@", filePath);
+        
+        NSURL *documentsDirectoryPath = [NSURL fileURLWithPath:[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]];
+        [[NSFileManager defaultManager] addSkipBackupAttributeToItemAtURL:[documentsDirectoryPath URLByAppendingPathComponent:@"booksdb.xml"]];
+        
         [self reloadDownladedBooksList];
     }];
     [downloadTask resume];

@@ -9,26 +9,31 @@
 #import "FTEUtilities.h"
 #import "SSZipArchive.h"
 #import "XMLDictionary.h"
+#import "NSFileManager+DoNotBackup.h"
 
 NSString *booksDownloadPath(){
-    NSString *tempDirectory = NSTemporaryDirectory();
-    NSString *downloadPath = [tempDirectory stringByAppendingPathComponent:@"/Downloaded/"];
+    NSArray  *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths firstObject];
+    NSString *downloadPath = [documentsDirectory stringByAppendingPathComponent:@"/eBooks/Downloaded/"];
     NSFileManager *manager = [NSFileManager defaultManager];
     if (![manager fileExistsAtPath:downloadPath]) {
         NSError *error = nil;
         [manager createDirectoryAtPath:downloadPath withIntermediateDirectories:NO attributes:nil error:&error];
+        //[manager addSkipBackupAttributeToItemAtURL:[NSURL fileURLWithPath:downloadPath isDirectory:YES]];
     }
     return downloadPath;
 }
 
 NSString *booksDownloadTempPath(){
-    NSString *tempDirectory = NSTemporaryDirectory();
-    NSString *downloadPath = [tempDirectory stringByAppendingPathComponent:@"/Downloaded/temp/"];
+    NSArray  *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths firstObject];
+    NSString *downloadPath = [documentsDirectory stringByAppendingPathComponent:@"/eBooks/Downloaded/temp/"];
     NSFileManager *manager = [NSFileManager defaultManager];
     if (![manager fileExistsAtPath:downloadPath]) {
         booksDownloadPath();
         NSError *error = nil;
         [manager createDirectoryAtPath:downloadPath withIntermediateDirectories:NO attributes:nil error:&error];
+        //[manager addSkipBackupAttributeToItemAtURL:[NSURL fileURLWithPath:downloadPath isDirectory:YES]];
     }
     return downloadPath;
 }
@@ -41,6 +46,7 @@ NSString *booksBasePath(){
     if (![manager fileExistsAtPath:booksPath]) {
         NSError *error = nil;
         [manager createDirectoryAtPath:booksPath withIntermediateDirectories:NO attributes:nil error:&error];
+        [manager addSkipBackupAttributeToItemAtURL:[NSURL fileURLWithPath:booksPath isDirectory:YES]];
     }
     return booksPath;
 }
@@ -48,18 +54,23 @@ NSString *booksBasePath(){
 NSString *booksPath(){
     NSArray  *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths firstObject];
-    NSString *booksPath = [documentsDirectory stringByAppendingPathComponent:@"/eBooks/Downloaded/"];
+    NSString *booksPath = [documentsDirectory stringByAppendingPathComponent:@"/eBooks/Parsed/"];
     NSFileManager *manager = [NSFileManager defaultManager];
     if (![manager fileExistsAtPath:booksPath]) {
         booksBasePath();
         NSError *error = nil;
         [manager createDirectoryAtPath:booksPath withIntermediateDirectories:NO attributes:nil error:&error];
+        //[manager addSkipBackupAttributeToItemAtURL:[NSURL fileURLWithPath:booksPath isDirectory:YES]];
     }
     return booksPath;
 }
 
 NSString *booksPathForId(NSString *bookId){
     return [booksPath() stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.epub",bookId]];
+}
+
+NSString *booksDownloadPathForId(NSString *bookId){
+    return [booksDownloadPath() stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.epub",bookId]];
 }
 
 NSString *booksDBPath(){
@@ -105,6 +116,7 @@ NSString *imagePath(NSString *basePath){
 
 BOOL unzipEbook(NSString *book){
     [SSZipArchive unzipFileAtPath:[booksDownloadPath() stringByAppendingPathComponent:book] toDestination:[booksPath() stringByAppendingPathComponent:book]];
+    //[[NSFileManager defaultManager] addSkipBackupAttributeToItemAtURL:[NSURL fileURLWithPath:[booksPath() stringByAppendingPathComponent:book]]];
     return YES;
 }
 
@@ -175,12 +187,13 @@ void deleteBookFromDB(FTEBookMeta *book){
 }
 
 void resetCache(){
-    NSString *tempDirectory = NSTemporaryDirectory();
-    NSString *downloadPath = [tempDirectory stringByAppendingPathComponent:@"/Downloaded/"];
-    
     NSArray  *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths firstObject];
-    NSString *booksPath = [documentsDirectory stringByAppendingPathComponent:@"/eBooks/Downloaded/"];
+    NSString *downloadPath = [documentsDirectory stringByAppendingPathComponent:@"/eBooks/Downloaded/"];
+    
+    //NSArray  *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    //NSString *documentsDirectory = [paths firstObject];
+    NSString *booksPath = [documentsDirectory stringByAppendingPathComponent:@"/eBooks/"];
     
     NSFileManager *fm = [NSFileManager defaultManager];
     [fm removeItemAtPath:downloadPath error:nil];

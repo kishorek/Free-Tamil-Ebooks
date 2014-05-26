@@ -17,5 +17,6 @@
 @property (weak, nonatomic) IBOutlet UISwitch *nightModeSwitch;
 @property (weak, nonatomic) IBOutlet UITextView *aboutTV;
 @property (weak, nonatomic) IBOutlet UILabel *lblVersion;
+@property (nonatomic, assign) BOOL hideResetOption;
 
 @end

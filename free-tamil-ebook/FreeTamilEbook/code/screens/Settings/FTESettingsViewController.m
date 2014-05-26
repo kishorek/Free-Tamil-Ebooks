@@ -10,6 +10,8 @@
 
 @interface FTESettingsViewController ()<UIAlertViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UIButton *btnReset;
+
 @end
 
 @implementation FTESettingsViewController
@@ -28,6 +30,9 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     self.nightModeSwitch.on = isNightModeOn();
+    if (self.hideResetOption) {
+        self.btnReset.hidden = YES;
+    }
 }
 
 - (void)didReceiveMemoryWarning

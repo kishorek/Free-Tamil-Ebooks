@@ -13,6 +13,7 @@
 #import "FTEBooksDB.h"
 #import "SVProgressHUD.h"
 #import "FTEBaseViewController.h"
+#import "NSFileManager+DoNotBackup.h"
 
 extern FTEAppDelegate *appDelegate;
 
@@ -22,6 +23,7 @@ NSString *booksDownloadPath();
 NSString *booksDownloadTempPath();
 NSString *booksPath();
 NSString *booksPathForId(NSString *bookId);
+NSString *booksDownloadPathForId(NSString *bookId);
 NSString *booksDBPath();
 NSString *cssPath(NSString *basePath);
 NSString *imagePath(NSString *basePath);

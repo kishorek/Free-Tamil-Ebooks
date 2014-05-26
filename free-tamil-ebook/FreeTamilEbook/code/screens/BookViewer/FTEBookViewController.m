@@ -10,13 +10,17 @@
 #import "XMLDictionary.h"
 #import "FTESettingsViewController.h"
 
-@interface FTEBookViewController ()<UIWebViewDelegate,UIGestureRecognizerDelegate, UIScrollViewDelegate>
+@interface FTEBookViewController ()<UIWebViewDelegate,UIGestureRecognizerDelegate, UIScrollViewDelegate,UIDocumentInteractionControllerDelegate>
 
 @property(nonatomic, assign) NSInteger currentPage;
 @property(nonatomic, assign) CGPoint lastLocation;
 @property(nonatomic, strong) UIButton *nextBtn;
 @property(nonatomic, strong) UITapGestureRecognizer *tap;
 @property(nonatomic, strong) UIActivityIndicatorView *spinner;
+
+@property (nonatomic, strong) UIDocumentInteractionController *docInteractionController;
+
+- (IBAction)actionsTapped:(id)sender;
 
 @end
 
@@ -76,6 +80,19 @@
     [self setupExtraButtons];
 }
 
+- (void)setupDocumentControllerWithURL:(NSURL *)url
+{
+    if (self.docInteractionController == nil)
+    {
+        self.docInteractionController = [UIDocumentInteractionController interactionControllerWithURL:url];
+        self.docInteractionController.delegate = self;
+    }
+    else
+    {
+        self.docInteractionController.URL = url;
+    }
+}
+
 -(void) setupExtraButtons{
     self.nextBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.nextBtn setBackgroundColor:[UIColor redColor]];
@@ -108,6 +125,7 @@
     if ([segue.identifier isEqualToString:@"BookViewToSettings"]) {
         UINavigationController *navC = [segue destinationViewController];
         FTESettingsViewController *vc = navC.viewControllers[0];
+        vc.hideResetOption = YES;
         vc.action = ^{
             [self dismissViewControllerAnimated:YES completion:^{
                 setNightModeForNavigationController(self.navigationController);
@@ -219,7 +237,6 @@
 
 -(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
     self.tap.enabled = NO;
-    NSLog(@"Scrolling started");
 }
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
@@ -271,7 +288,7 @@
 }
 
 -(void) doubleTapped:(UIGestureRecognizer *) gesture{
-    NSLog(@"double");
+    //NSLog(@"double");
 }
 
 -(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer{
@@ -289,5 +306,14 @@
 
 - (IBAction)nextPageTapped:(id)sender {
     [self loadNextPage];
+}
+- (IBAction)actionsTapped:(id)sender {
+    NSURL *fileURL = [NSURL fileURLWithPath:booksDownloadPathForId(appDelegate.booksDB.currentBook.bookId)];
+    [self setupDocumentControllerWithURL:fileURL];
+    [self.docInteractionController presentOptionsMenuFromRect:CGRectMake(100, 100, 500, 500)
+     inView:self.view
+     animated:YES];
+    
+    //[self.docInteractionController presentOpenInMenuFromRect:CGRectMake(100, 100, 500, 500) inView:self.view animated:YES];
 }
 @end

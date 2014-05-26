@@ -27,7 +27,7 @@
 -(void)setBookMetaInfo:(FTEBookMeta *)bookMetaInfo{
     _bookMetaInfo = bookMetaInfo;
     
-    [self.bookImg setImageWithURL:[NSURL URLWithString:self.bookMetaInfo.imagePath]];
+    [self.bookImg setImageWithURL:[NSURL URLWithString:self.bookMetaInfo.imagePath] placeholderImage:[UIImage imageNamed:@"default-book"]];
     [self.lblTitle setText:self.bookMetaInfo.title];
     
     if (isNightModeOn()) {
