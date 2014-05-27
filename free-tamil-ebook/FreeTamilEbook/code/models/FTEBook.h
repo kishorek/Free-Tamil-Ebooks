@@ -10,11 +10,11 @@
 
 @interface FTEBook : NSObject
 
-@property (nonatomic, strong) NSString *title;
-@property (nonatomic, strong) NSString *author;
-@property (nonatomic, strong) NSString *bookId;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *author;
+@property (nonatomic, copy) NSString *bookId;
 @property (nonatomic, assign) NSInteger currentPage;
-@property (nonatomic, strong) NSString *currentLocation;
+@property (nonatomic, copy) NSString *currentLocation;
 
 @property (nonatomic, strong) NSArray *toc;
 @property (nonatomic, strong) NSDictionary *availablePages;
