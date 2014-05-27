@@ -12,7 +12,7 @@
 #import "XMLDictionary.h"
 #import "AFNetworking.h"
 
-static NSString * const xmlDBPath = @"http://dev.techlona.in/fteappdata/data.php";
+static NSString * const xmlDBPath = @"https://raw.githubusercontent.com/kishorek/Free-Tamil-Ebooks/master/booksdb.xml";
 
 @interface FTEShopViewController ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UIAlertViewDelegate>
 
