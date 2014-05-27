@@ -126,11 +126,15 @@ static NSString * const xmlDBPath = @"https://raw.githubusercontent.com/kishorek
 -(void) downloadBook:(FTEBookMeta *) book{
     //Download Stuff
     if (isNotNull(book.epubLink)) {
+        __weak FTEShopViewController *weakself = self;
+        
         NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:book.epubLink]];
         AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:req];
+        
         NSString *downloadPath = [booksDownloadTempPath() stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.epub",book.bookId]];
         NSOutputStream *outputstream = [NSOutputStream outputStreamToFileAtPath:downloadPath append:YES];
         [operation setOutputStream:outputstream];
+        
         [operation setDownloadProgressBlock:^(NSUInteger bytesRead, long long totalBytesRead, long long totalBytesExpectedToRead) {
             float progress = (float) totalBytesRead/totalBytesExpectedToRead;
             if (progress > 0) {
@@ -142,10 +146,10 @@ static NSString * const xmlDBPath = @"https://raw.githubusercontent.com/kishorek
         
         [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
             if ([operation.response statusCode] == 200) {
-                [self moveBook:downloadPath withBookId:book.bookId];
+                [weakself moveBook:downloadPath withBookId:book.bookId];
                 unzipEbook([NSString stringWithFormat:@"%@.epub",book.bookId]);
                 addBookToDB(book);
-                [self.collectionView reloadData];
+                [weakself.collectionView reloadData];
                 [SVProgressHUD showSuccessWithStatus:@"Book Downloaded!"];
             } else {
                 [SVProgressHUD showErrorWithStatus:@"Some error occurred :( \n Try again Later!"];
@@ -171,26 +175,30 @@ static NSString * const xmlDBPath = @"https://raw.githubusercontent.com/kishorek
 }
 
 -(void) loadAvailableBooks{
-    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
-    AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
+    __weak FTEShopViewController *weakself = self;
     
-    NSURL *URL = [NSURL URLWithString:xmlDBPath];
-    NSURLRequest *request = [NSURLRequest requestWithURL:URL cachePolicy:NSURLCacheStorageNotAllowed timeoutInterval:10.0];
+    NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:xmlDBPath]];
+    AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:req];
+    
+    NSURL *documentsDirectoryPath = [NSURL fileURLWithPath:[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]];
+    NSURL *downloadPath = [documentsDirectoryPath URLByAppendingPathComponent:@"booksdb.xml"];
+    NSOutputStream *outputstream = [NSOutputStream outputStreamWithURL:downloadPath append:NO];
+    [operation setOutputStream:outputstream];
+    
+    [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+        if ([operation.response statusCode] == 200) {
+            [[NSFileManager defaultManager] addSkipBackupAttributeToItemAtURL:downloadPath];
+            [weakself reloadDownladedBooksList];
+            [SVProgressHUD dismiss];
+        } else {
+            [SVProgressHUD showErrorWithStatus:@"Some error occurred :( \n Try again Later!"];
+        }
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        [SVProgressHUD showErrorWithStatus:@"Some error occurred :( \n Try again Later!"];
+    }];
     
     [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeBlack];
-    
-    NSURLSessionDownloadTask *downloadTask = [manager downloadTaskWithRequest:request progress:nil destination:^NSURL *(NSURL *targetPath, NSURLResponse *response) {
-        NSURL *documentsDirectoryPath = [NSURL fileURLWithPath:[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]];
-        return [documentsDirectoryPath URLByAppendingPathComponent:@"booksdb.xml"];//[response suggestedFilename]];
-    } completionHandler:^(NSURLResponse *response, NSURL *filePath, NSError *error) {
-        [SVProgressHUD dismiss];
-        
-        NSURL *documentsDirectoryPath = [NSURL fileURLWithPath:[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]];
-        [[NSFileManager defaultManager] addSkipBackupAttributeToItemAtURL:[documentsDirectoryPath URLByAppendingPathComponent:@"booksdb.xml"]];
-        
-        [self reloadDownladedBooksList];
-    }];
-    [downloadTask resume];
+    [operation start];
 }
 
 -(void) reloadDownladedBooksList{
