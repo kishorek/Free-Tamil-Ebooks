@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <books>
 	<book>
+		<bookid>c735d720-6f4d-4bcc-ae68-c1231be5a4dc</bookid>
+		<title>வெள்ளிக்கிழமை விரத கதை</title>
+		<author> மீ . பழனியப்பன் </author>
+		<image>http://freetamilebooks.com/wp-content/uploads/2015/01/velli-196x300.png</image>
+		<link>http://freetamilebooks.com/ebooks/fridayfastingstory/</link>
+		<epub>http://freetamilebooks.com/download/%e0%ae%b5%e0%af%86%e0%ae%b3%e0%af%8d%e0%ae%b3%e0%ae%bf%e0%ae%95%e0%af%8d%e0%ae%95%e0%ae%bf%e0%ae%b4%e0%ae%ae%e0%af%88-%e0%ae%b5%e0%ae%bf%e0%ae%b0%e0%ae%a4%e0%ae%95%e0%af%8d-%e0%ae%95%e0%ae%a4-2/</epub>
+		<pdf>http://freetamilebooks.com/download/%e0%ae%b5%e0%af%86%e0%ae%b3%e0%af%8d%e0%ae%b3%e0%ae%bf%e0%ae%95%e0%af%8d%e0%ae%95%e0%ae%bf%e0%ae%b4%e0%ae%ae%e0%af%88-%e0%ae%b5%e0%ae%bf%e0%ae%b0%e0%ae%a4%e0%ae%95%e0%af%8d-%e0%ae%95%e0%ae%a4-3/</pdf>
+		<category />
+		<date />
+	</book>
+	<book>
+		<bookid>1d189cd5-adb0-4cb5-94ac-396e18711c84</bookid>
+		<title>38 கவிதைகள்</title>
+		<author> பேயோன் </author>
+		<image>http://freetamilebooks.com/wp-content/uploads/2014/12/38payonKavithaighal-203x300.jpg</image>
+		<link>http://freetamilebooks.com/ebooks/38-payon-kavithaighal/</link>
+		<epub>http://freetamilebooks.com/download/38-%e0%ae%95%e0%ae%b5%e0%ae%bf%e0%ae%a4%e0%af%88%e0%ae%95%e0%ae%b3%e0%af%8d/</epub>
+		<pdf>http://freetamilebooks.com/download/38-%e0%ae%95%e0%ae%b5%e0%ae%bf%e0%ae%a4%e0%af%88%e0%ae%95%e0%ae%b3%e0%af%8d-4/</pdf>
+		<category />
+		<date />
+	</book>
+	<book>
+		<bookid>38ec5952-ad5b-45c6-89b8-506c39d49b01</bookid>
+		<title>அபிராமி அந்தாதி – எளிய தமிழில்</title>
+		<author> ஜவஹர் கண்ணன் </author>
+		<image>http://freetamilebooks.com/wp-content/uploads/2015/01/%E0%AE%85%E0%AE%AA%E0%AE%BF%E0%AE%B0%E0%AE%BE%E0%AE%AE%E0%AE%BF-%E0%AE%85%E0%AE%A8%E0%AF%8D%E0%AE%A4%E0%AE%BE%E0%AE%A4%E0%AE%BF1-201x300.jpg</image>
+		<link>http://freetamilebooks.com/ebooks/abiramianthatiintamil/</link>
+		<epub>http://freetamilebooks.com/download/%e0%ae%85%e0%ae%aa%e0%ae%bf%e0%ae%b0%e0%ae%be%e0%ae%ae%e0%ae%bf-%e0%ae%85%e0%ae%a8%e0%af%8d%e0%ae%a4%e0%ae%be%e0%ae%a4%e0%ae%bf-%e0%ae%8e%e0%ae%b3%e0%ae%bf%e0%ae%af-%e0%ae%a4%e0%ae%ae/</epub>
+		<pdf>http://freetamilebooks.com/download/%e0%ae%85%e0%ae%aa%e0%ae%bf%e0%ae%b0%e0%ae%be%e0%ae%ae%e0%ae%bf-%e0%ae%85%e0%ae%a8%e0%af%8d%e0%ae%a4%e0%ae%be%e0%ae%a4%e0%ae%bf-%e0%ae%8e%e0%ae%b3%e0%ae%bf%e0%ae%af-%e0%ae%a4%e0%ae%ae-3/</pdf>
+		<category />
+		<date />
+	</book>
+	<book>
 		<bookid>77e6ad03-8689-44b7-85e2-de4e636faa82</bookid>
 		<title>வினவு சிறுகதைகள்</title>
 		<author> வினவு குழு </author>
