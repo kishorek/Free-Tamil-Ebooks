@@ -1,5 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<books>
+<books>	
+	<book>
+		<bookid>6b66fab1-d082-4a36-becf-e01dc399aa7e</bookid>
+		<title>தேவதைகளின் பொழுது போக்கு கவிதை எழுதுவது!</title>
+		<author>வா.மு.கோமு</author>
+		<image>http://freetamilebooks.com/wp-content/uploads/2015/02/DevathaikalinPoluthuPoku-300x300.jpg</image>
+		<link>http://freetamilebooks.com/ebooks/devathainpoluthupoku/</link>
+		<epub>http://freetamilebooks.com/download/%e0%ae%a4%e0%af%87%e0%ae%b5%e0%ae%a4%e0%af%88%e0%ae%95%e0%ae%b3%e0%ae%bf%e0%ae%a9%e0%af%8d-%e0%ae%aa%e0%af%8a%e0%ae%b4%e0%af%81%e0%ae%a4%e0%af%81-%e0%ae%aa%e0%af%8b%e0%ae%95%e0%af%8d%e0%ae%95-4/</epub>
+		<pdf>http://freetamilebooks.com/download/%e0%ae%a4%e0%af%87%e0%ae%b5%e0%ae%a4%e0%af%88%e0%ae%95%e0%ae%b3%e0%ae%bf%e0%ae%a9%e0%af%8d-%e0%ae%aa%e0%af%8a%e0%ae%b4%e0%af%81%e0%ae%a4%e0%af%81-%e0%ae%aa%e0%af%8b%e0%ae%95%e0%af%8d%e0%ae%95-2/</pdf>
+		<category />
+		<date />
+	</book>
+	<book>
+		<bookid>0ff7ca48-07e7-4967-8415-1e35f8f09f2c</bookid>
+		<title>காதல் தந்த தேவதைக்கு</title>
+		<author>ஜெகதீஸ்வரன் நடராஜன்</author>
+		<image>http://freetamilebooks.com/wp-content/uploads/2015/02/KTD-201x300.jpg</image>
+		<link>http://freetamilebooks.com/ebooks/kadhalthandadevathaiku/</link>
+		<epub>http://freetamilebooks.com/download/%e0%ae%95%e0%ae%be%e0%ae%a4%e0%ae%b2%e0%af%8d-%e0%ae%a4%e0%ae%a8%e0%af%8d%e0%ae%a4-%e0%ae%a4%e0%af%87%e0%ae%b5%e0%ae%a4%e0%af%88%e0%ae%95%e0%af%8d%e0%ae%95%e0%af%81-4/</epub>
+		<pdf>http://freetamilebooks.com/download/%e0%ae%95%e0%ae%be%e0%ae%a4%e0%ae%b2%e0%af%8d-%e0%ae%a4%e0%ae%a8%e0%af%8d%e0%ae%a4-%e0%ae%a4%e0%af%87%e0%ae%b5%e0%ae%a4%e0%af%88%e0%ae%95%e0%af%8d%e0%ae%95%e0%af%81/</pdf>
+		<category />
+		<date />
+	</book>
+	<book>
+		<bookid>55ae15dd-6196-4be0-985a-049338fd0dee</bookid>
+		<title>பெண்களோ பெண்கள்!</title>
+		<author>நிர்மலா ராகவன்</author>
+		<image>http://freetamilebooks.com/wp-content/uploads/2015/02/pengalopengal-212x300.jpg</image>
+		<link>http://freetamilebooks.com/ebooks/pengalopengal/</link>
+		<epub>http://freetamilebooks.com/download/%e0%ae%aa%e0%af%86%e0%ae%a3%e0%af%8d%e0%ae%95%e0%ae%b3%e0%af%8b-%e0%ae%aa%e0%af%86%e0%ae%a3%e0%af%8d%e0%ae%95%e0%ae%b3%e0%af%8d-4/</epub>
+		<pdf>http://freetamilebooks.com/download/%e0%ae%aa%e0%af%86%e0%ae%a3%e0%af%8d%e0%ae%95%e0%ae%b3%e0%af%8b-%e0%ae%aa%e0%af%86%e0%ae%a3%e0%af%8d%e0%ae%95%e0%ae%b3%e0%af%8d/</pdf>
+		<category />
+		<date />
+	</book>
 	<book>
 		<bookid>a3e02346-9aee-47f1-b459-1f2ca935a3bb</bookid>
 		<title>அவனும் ஓர் உயிர்</title>
