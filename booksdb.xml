@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <books>	
+
+		<book>
+		<bookid>eb593344-dd03-4711-8ec7-6d4487d3dbb5</bookid>
+		<title>உடலின் மொழி </title>
+		<author>அ. உமர்பாரூக்</author>
+		<image>http://freetamilebooks.com/wp-content/uploads/2015/09/bodylanguage.jpg</image>
+		<link>http://freetamilebooks.com/ebooks/bodylanguage/</link>
+		<epub>http://freetamilebooks.com/download/%e0%ae%89%e0%ae%9f%e0%ae%b2%e0%ae%bf%e0%ae%a9%e0%af%8d-%e0%ae%ae%e0%af%8a%e0%ae%b4%e0%ae%bf-epub/</epub>
+		<pdf>http://freetamilebooks.com/download/%e0%ae%89%e0%ae%9f%e0%ae%b2%e0%ae%bf%e0%ae%a9%e0%af%8d-%e0%ae%ae%e0%af%8a%e0%ae%b4%e0%ae%bf-6inch/</pdf>
+		<category />
+		<date />
+		</book>
+		
 		<book>
 		<bookid>24ae19e3-c533-44dc-a4a2-7ffdd882c0e8</bookid>
 		<title>பிள்ளையார், பிள்ளையார், பெருமை வாய்ந்த பிள்ளையார்! </title>
@@ -10,7 +23,7 @@
 		<pdf>http://freetamilebooks.com/download/%e0%ae%aa%e0%ae%bf%e0%ae%b3%e0%af%8d%e0%ae%b3%e0%af%88%e0%ae%af%e0%ae%be%e0%ae%b0%e0%af%8d-%e0%ae%aa%e0%ae%bf%e0%ae%b3%e0%af%8d%e0%ae%b3%e0%af%88%e0%ae%af%e0%ae%be%e0%ae%b0%e0%af%8d-%e0%ae%aa-4/</pdf>
 		<category />
 		<date />
-	</book>
+		</book>
 
 
 	<book>
