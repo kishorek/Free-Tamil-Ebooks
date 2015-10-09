@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <books>	
 
+
+		<book>
+		<bookid>5f5e1ad0-23bc-4657-8f18-90633fa13a65</bookid>
+		<title>முதல் புத்தகம்   </title>
+		<author>தமிழ்</author>
+		<image>http://freetamilebooks.com/wp-content/uploads/2015/10/first-book-cover-image-264x394.png</image>
+		<link>http://freetamilebooks.com/ebooks/first-book/</link>
+		<epub>http://freetamilebooks.com/download/%e0%ae%ae%e0%af%81%e0%ae%a4%e0%ae%b2%e0%af%8d-%e0%ae%aa%e0%af%81%e0%ae%a4%e0%af%8d%e0%ae%a4%e0%ae%95%e0%ae%ae%e0%af%8d-epub/</epub>
+		<pdf></pdf>
+		<category />
+		<date />
+		</book>
+
+
+
+
+		<book>
+		<bookid>c3c25b58-9058-455a-940d-e466203ddee5</bookid>
+		<title>தெய்வீக சிந்தனைகள்   </title>
+		<author>ஆ.வேலு</author>
+		<image>http://freetamilebooks.com/wp-content/uploads/2015/10/drawing600px-280x394.png</image>
+		<link>http://freetamilebooks.com/ebooks/%e0%ae%a4%e0%af%86%e0%ae%af%e0%af%8d%e0%ae%b5%e0%af%80%e0%ae%95-%e0%ae%9a%e0%ae%bf%e0%ae%a8%e0%af%8d%e0%ae%a4%e0%ae%a9%e0%af%88%e0%ae%95%e0%ae%b3%e0%af%8d/</link>
+		<epub>http://freetamilebooks.com/download/%e0%ae%a4%e0%af%86%e0%ae%af%e0%af%8d%e0%ae%b5%e0%af%80%e0%ae%95-%e0%ae%9a%e0%ae%bf%e0%ae%a8%e0%af%8d%e0%ae%a4%e0%ae%a9%e0%af%88%e0%ae%95%e0%ae%b3%e0%af%8d-epub/</epub>
+		<pdf></pdf>
+		<category />
+		<date />
+		</book>
+
 		<book>
 		<bookid>136f492b-a554-4f32-8be6-c5c465f3c69a</bookid>
 		<title>புகைப்பட அனுபவங்கள்   </title>
