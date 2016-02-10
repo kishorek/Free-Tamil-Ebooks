@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<books>	
+<books>				
+		<book>
+		<bookid>5b6d2a97-d8c4-460b-9cd7-0645142a996f</bookid>
+		<title>மனஓசை – சிறுகதைகள்</title>
+		<author>சந்திரவதனா</author>
+		<image>http://freetamilebooks.com/wp-content/uploads/2016/02/mana-osai-cover-229x300.jpg</image>
+		<link>http://freetamilebooks.com/ebooks/manaosai-short-stories/</link>
+		<epub>http://freetamilebooks.com/download/%e0%ae%ae%e0%ae%a9%e0%ae%93%e0%ae%9a%e0%af%88-%e0%ae%9a%e0%ae%bf%e0%ae%b1%e0%af%81%e0%ae%95%e0%ae%a4%e0%af%88%e0%ae%95%e0%ae%b3%e0%af%8d-epub/</epub>
+		<pdf>http://freetamilebooks.com/download/%e0%ae%ae%e0%ae%a9%e0%ae%93%e0%ae%9a%e0%af%88-%e0%ae%9a%e0%ae%bf%e0%ae%b1%e0%af%81%e0%ae%95%e0%ae%a4%e0%af%88%e0%ae%95%e0%ae%b3%e0%af%8d-6-inch-pdf/</pdf>
+		<category />
+		<date />
+		</book>
+
+		<book>
+		<bookid>52fe2fef-d5dd-4d65-956b-7ff499a099e6</bookid>
+		<title>எளிய தமிழில் PHP</title>
+		<author>இரா.கதிர்வேல்</author>
+		<image>http://www.kaniyam.com/wp-content/uploads/2016/02/learn-PHP-in-tamil-3d-cover-273x300.jpg</image>
+		<link>http://freetamilebooks.com/ebooks/learn-php-in-tamil/</link>
+		<epub>http://freetamilebooks.com/download/%e0%ae%8e%e0%ae%b3%e0%ae%bf%e0%ae%af-%e0%ae%a4%e0%ae%ae%e0%ae%bf%e0%ae%b4%e0%ae%bf%e0%ae%b2%e0%af%8d-php-epub/</epub>
+		<pdf>http://freetamilebooks.com/download/%e0%ae%8e%e0%ae%b3%e0%ae%bf%e0%ae%af-%e0%ae%a4%e0%ae%ae%e0%ae%bf%e0%ae%b4%e0%ae%bf%e0%ae%b2%e0%af%8d-php-6-inch-pdf/</pdf>
+		<category />
+		<date />
+		</book>
+
 		<book>
 		<bookid>23d4112e-2bc1-41de-880e-c3f3964cfb9c</bookid>
 		<title>உள்ளத்திலிருந்தே வாழ்வு</title>
