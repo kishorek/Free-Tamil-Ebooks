@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<books>				
+<books>			
+		<book>
+		<bookid>f451c51d-3b6c-4ac6-8626-192cab1e677f</bookid>
+		<title>இணைய மனிதன் 1.0 காதல் முதல் கணினி வரை</title>
+		<author> ரகுபதி</author>
+		<image>http://freetamilebooks.com/wp-content/uploads/2016/02/cover_img-200x300.jpg</image>
+		<link>http://freetamilebooks.com/ebooks/innaiyamanidhan1/</link>
+		<epub>http://freetamilebooks.com/download/%e0%ae%87%e0%ae%a3%e0%af%88%e0%ae%af-%e0%ae%ae%e0%ae%a9%e0%ae%bf%e0%ae%a4%e0%ae%a9%e0%af%8d-1-0-epub/</epub>
+		<pdf>http://freetamilebooks.com/download/%e0%ae%87%e0%ae%a3%e0%af%88%e0%ae%af-%e0%ae%ae%e0%ae%a9%e0%ae%bf%e0%ae%a4%e0%ae%a9%e0%af%8d-1-0-6inch/</pdf>
+		<category />
+		<date />
+		</book>
+		
+		<book>
+		<bookid>0b8fd801-cf6c-46df-8fdd-74a73ee55657</bookid>
+		<title>பார்வை</title>
+		<author>பொன் குலேந்திரன்</author>
+		<image>http://freetamilebooks.com/wp-content/uploads/2016/02/parvai-213x300.jpg</image>
+		<link>http://freetamilebooks.com/ebooks/parvai21shortstories/</link>
+		<epub>http://freetamilebooks.com/download/%e0%ae%aa%e0%ae%be%e0%ae%b0%e0%af%8d%e0%ae%b5%e0%af%88-epub/</epub>
+		<pdf>http://freetamilebooks.com/download/%e0%ae%aa%e0%ae%be%e0%ae%b0%e0%af%8d%e0%ae%b5%e0%af%88-6inch/</pdf>
+		<category />
+		<date />
+		</book>
+		
 		<book>
 		<bookid>5b6d2a97-d8c4-460b-9cd7-0645142a996f</bookid>
 		<title>மனஓசை – சிறுகதைகள்</title>
