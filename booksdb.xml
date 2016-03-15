@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<books>			
+<books>		
+		<book>
+		<bookid>31cea8d5-eccd-44b3-919c-ba9528eb1ca3</bookid>
+		<title>சரோஜா பாட்டி கதைகள்</title>
+		<author>சங்கர் ஜெயகணேஷ்</author>
+		<image>http://freetamilebooks.com/wp-content/uploads/2016/03/sarojapatikadaikal-212x300.jpg</image>
+		<link>http://freetamilebooks.com/ebooks/sarojapatikadaikal/</link>
+		<epub>http://freetamilebooks.com/download/%e0%ae%9a%e0%ae%b0%e0%af%8b%e0%ae%9c%e0%ae%be-%e0%ae%aa%e0%ae%be%e0%ae%9f%e0%af%8d%e0%ae%9f%e0%ae%bf-%e0%ae%95%e0%ae%a4%e0%af%88%e0%ae%95%e0%ae%b3%e0%af%8d-epub/</epub>
+		<pdf>http://freetamilebooks.com/download/%e0%ae%9a%e0%ae%b0%e0%af%8b%e0%ae%9c%e0%ae%be-%e0%ae%aa%e0%ae%be%e0%ae%9f%e0%af%8d%e0%ae%9f%e0%ae%bf-%e0%ae%95%e0%ae%a4%e0%af%88%e0%ae%95%e0%ae%b3%e0%af%8d-6inch/</pdf>
+		<category />
+		<date />
+		</book>
+
+		<book>
+		<bookid>4f1d3f86-0dc9-48b6-9135-95132164756b</bookid>
+		<title>சாலை வளைவில்</title>
+		<author>கா.பாலபாரதி</author>
+		<image>http://freetamilebooks.com/wp-content/uploads/2016/03/cover-213x300.jpg</image>
+		<link>http://freetamilebooks.com/ebooks/salaivalaivil/</link>
+		<epub>http://freetamilebooks.com/download/%e0%ae%9a%e0%ae%be%e0%ae%b2%e0%af%88-%e0%ae%b5%e0%ae%b3%e0%af%88%e0%ae%b5%e0%ae%bf%e0%ae%b2%e0%af%8d-epub/</epub>
+		<pdf>http://freetamilebooks.com/download/%e0%ae%9a%e0%ae%be%e0%ae%b2%e0%af%88-%e0%ae%b5%e0%ae%b3%e0%af%88%e0%ae%b5%e0%ae%bf%e0%ae%b2%e0%af%8d-6inch/</pdf>
+		<category />
+		<date />
+		</book>
+		
 		<book>
 		<bookid>f451c51d-3b6c-4ac6-8626-192cab1e677f</bookid>
 		<title>இணைய மனிதன் 1.0 காதல் முதல் கணினி வரை</title>
