@@ -1,5 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<books>		
+<books>	
+
+		<book>
+		<bookid>3c8da94b-c685-418f-a417-bdb8a105dc06</bookid>
+		<title>அப்துல் கலாமின் கவிதைகளும், மேற்கோள்களும்</title>
+		<author>ஏற்காடு இளங்கோ</author>
+		<image>http://freetamilebooks.com/wp-content/uploads/2016/04/abdul-212x300.jpg</image>
+		<link>http://freetamilebooks.com/ebooks/abdul-kalam-poems-quotes/</link>
+		<epub>http://freetamilebooks.com/download/%e0%ae%85%e0%ae%aa%e0%af%8d%e0%ae%a4%e0%af%81%e0%ae%b2%e0%af%8d-%e0%ae%95%e0%ae%b2%e0%ae%be%e0%ae%ae%e0%ae%bf%e0%ae%a9%e0%af%8d-%e0%ae%95%e0%ae%b5%e0%ae%bf%e0%ae%a4%e0%af%88%e0%ae%95%e0%ae%b3%e0%af%81/</epub>
+		<pdf>http://freetamilebooks.com/download/%e0%ae%85%e0%ae%aa%e0%af%8d%e0%ae%a4%e0%af%81%e0%ae%b2%e0%af%8d-%e0%ae%95%e0%ae%b2%e0%ae%be%e0%ae%ae%e0%ae%bf%e0%ae%a9%e0%af%8d-%e0%ae%95%e0%ae%b5%e0%ae%bf%e0%ae%a4%e0%af%88%e0%ae%95%e0%ae%b3-4/</pdf>
+		<category />
+		<date />
+		</book>
+		
+		<book>
+		<bookid>ebd80d14-2262-4c94-b877-375cbdde1c9b</bookid>
+		<title>பார்வையற்ற முதல் பட்டதாரி பெண் ஹெலன் கெல்லர்</title>
+		<author>ஏற்காடு இளங்கோ</author>
+		<image>http://freetamilebooks.com/wp-content/uploads/2016/03/21534265079_7a9888c633_b-212x300.jpg</image>
+		<link>http://freetamilebooks.com/ebooks/helen-keller/</link>
+		<epub>http://freetamilebooks.com/download/%e0%ae%aa%e0%ae%be%e0%ae%b0%e0%af%8d%e0%ae%b5%e0%af%88%e0%ae%af%e0%ae%b1%e0%af%8d%e0%ae%b1-%e0%ae%ae%e0%af%81%e0%ae%a4%e0%ae%b2%e0%af%8d-%e0%ae%aa%e0%ae%9f%e0%af%8d%e0%ae%9f%e0%ae%a4%e0%ae%be%e0%ae%b0/</epub>
+		<pdf>http://freetamilebooks.com/download/%e0%ae%aa%e0%ae%be%e0%ae%b0%e0%af%8d%e0%ae%b5%e0%af%88%e0%ae%af%e0%ae%b1%e0%af%8d%e0%ae%b1-%e0%ae%ae%e0%af%81%e0%ae%a4%e0%ae%b2%e0%af%8d-%e0%ae%aa%e0%ae%9f%e0%af%8d%e0%ae%9f%e0%ae%a4%e0%ae%be-4/</pdf>
+		<category />
+		<date />
+		</book>
+
+		<book>
+		<bookid>908de289-34b7-4a6a-a72a-31608501396b</bookid>
+		<title>தொழிலாளர் இல்லாத வளர்ச்சியா?</title>
+		<author>ஸ்ரீ ஸம்பத்</author>
+		<image>http://freetamilebooks.com/wp-content/uploads/2016/03/thozhilarillathavalarchiya-199x300.jpg</image>
+		<link>http://freetamilebooks.com/ebooks/thozhilariillathavalarchiya/</link>
+		<epub>http://freetamilebooks.com/download/%e0%ae%a4%e0%af%8a%e0%ae%b4%e0%ae%bf%e0%ae%b2%e0%ae%be%e0%ae%b3%e0%ae%b0%e0%af%8d-%e0%ae%87%e0%ae%b2%e0%af%8d%e0%ae%b2%e0%ae%be%e0%ae%a4-%e0%ae%b5%e0%ae%b3%e0%ae%b0%e0%af%8d%e0%ae%9a%e0%af%8d-4/</epub>
+		<pdf>http://freetamilebooks.com/download/%e0%ae%a4%e0%af%8a%e0%ae%b4%e0%ae%bf%e0%ae%b2%e0%ae%be%e0%ae%b3%e0%ae%b0%e0%af%8d-%e0%ae%87%e0%ae%b2%e0%af%8d%e0%ae%b2%e0%ae%be%e0%ae%a4-%e0%ae%b5%e0%ae%b3%e0%ae%b0%e0%af%8d%e0%ae%9a%e0%af%8d%e0%ae%9a/</pdf>
+		<category />
+		<date />
+		</book>
+		
 		<book>
 		<bookid>58edb9f2-cbc4-45e3-a49f-46386a8855fb</bookid>
 		<title>விரியும் வனம்</title>
