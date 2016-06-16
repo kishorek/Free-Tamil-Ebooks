@@ -1,5 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <books>	
+		<book>
+		<bookid>8bd3b1ae-6e23-4491-8101-8891e31eb33e</bookid>
+		<title>எளிய தமிழில் CSS</title>
+		<author>து.நித்யா</author>
+		<image>http://freetamilebooks.com/wp-content/uploads/2016/06/learn-CSS-in-Tamil-300x234.jpg</image>
+		<link>http://freetamilebooks.com/ebooks/learn-css-in-tamil/</link>
+		<epub>http://freetamilebooks.com/download/%e0%ae%8e%e0%ae%b3%e0%ae%bf%e0%ae%af-%e0%ae%a4%e0%ae%ae%e0%ae%bf%e0%ae%b4%e0%ae%bf%e0%ae%b2%e0%af%8d-css-epub/</epub>
+		<pdf>http://freetamilebooks.com/download/%e0%ae%8e%e0%ae%b3%e0%ae%bf%e0%ae%af-%e0%ae%a4%e0%ae%ae%e0%ae%bf%e0%ae%b4%e0%ae%bf%e0%ae%b2%e0%af%8d-css-6-inch-pdf/</pdf>
+		<category />
+		<date />
+		</book>
+
+		<book>
+		<bookid>b4109c47-89d8-4aec-bbd1-30e490e2fd63</bookid>
+		<title>சிந்தித்தால் சிரிப்பு வரும் (அல்லது) அலுவலர்களின் அட்டகாசம் – கட்டுரைகள்</title>
+		<author>பி.எஸ்.பசுபதிலிங்கம்</author>
+		<image>http://freetamilebooks.com/wp-content/uploads/2016/06/cover-212x300.jpg</image>
+		<link>http://freetamilebooks.com/ebooks/sindhithal-sirippu-varum/</link>
+		<epub>http://freetamilebooks.com/download/%e0%ae%9a%e0%ae%bf%e0%ae%a8%e0%af%8d%e0%ae%a4%e0%ae%bf%e0%ae%a4%e0%af%8d%e0%ae%a4%e0%ae%be%e0%ae%b2%e0%af%8d-%e0%ae%9a%e0%ae%bf%e0%ae%b0%e0%ae%bf%e0%ae%aa%e0%af%8d%e0%ae%aa%e0%af%81%e0%ae%b5%e0%ae%b0/</epub>
+		<pdf>http://freetamilebooks.com/download/%e0%ae%9a%e0%ae%bf%e0%ae%a8%e0%af%8d%e0%ae%a4%e0%ae%bf%e0%ae%a4%e0%af%8d%e0%ae%a4%e0%ae%be%e0%ae%b2%e0%af%8d-%e0%ae%9a%e0%ae%bf%e0%ae%b0%e0%ae%bf%e0%ae%aa%e0%af%8d%e0%ae%aa%e0%af%81%e0%ae%b5-4/</pdf>
+		<category />
+		<date />
+		</book>
+
+		<book>
+		<bookid>f84edcdd-7bb6-448a-b7d1-c0fbfcfe1ef0</bookid>
+		<title>மழையில் குளித்த வெயில் – கவிதைகள்</title>
+		<author>விக்கி</author>
+		<image>http://freetamilebooks.com/wp-content/uploads/2016/06/cover-page-213x300.jpg</image>
+		<link>http://freetamilebooks.com/ebooks/mazhaiyil-kulitha-veyil/</link>
+		<epub>http://freetamilebooks.com/download/%e0%ae%ae%e0%ae%b4%e0%af%88%e0%ae%af%e0%ae%bf%e0%ae%b2%e0%af%8d-%e0%ae%95%e0%af%81%e0%ae%b3%e0%ae%bf%e0%ae%a4%e0%af%8d%e0%ae%a4-%e0%ae%b5%e0%af%86%e0%ae%af%e0%ae%bf%e0%ae%b2%e0%af%8d-%e0%ae%95/</epub>
+		<pdf>http://freetamilebooks.com/download/%e0%ae%ae%e0%ae%b4%e0%af%88%e0%ae%af%e0%ae%bf%e0%ae%b2%e0%af%8d-%e0%ae%95%e0%af%81%e0%ae%b3%e0%ae%bf%e0%ae%a4%e0%af%8d%e0%ae%a4-%e0%ae%b5%e0%af%86%e0%ae%af%e0%ae%bf%e0%ae%b2%e0%af%8d-%e0%ae%95-4/</pdf>
+		<category />
+		<date />
+		</book>
+
+		<book>
+		<bookid>e9899148-65a8-4354-9af5-2f649d741a0d</bookid>
+		<title>அலையும் மனமும் வதியும் புலமும் – கதைகள்</title>
+		<author>சந்திரவதனா</author>
+		<image>http://freetamilebooks.com/wp-content/uploads/2016/04/pulam-cover-214x300.jpg</image>
+		<link>http://freetamilebooks.com/ebooks/alaiyum-manamum-vathiyum-pulamum/</link>
+		<epub>http://freetamilebooks.com/download/%e0%ae%85%e0%ae%b2%e0%af%88%e0%ae%af%e0%af%81%e0%ae%ae%e0%af%8d-%e0%ae%ae%e0%ae%a9%e0%ae%ae%e0%af%81%e0%ae%ae%e0%af%8d-%e0%ae%b5%e0%ae%a4%e0%ae%bf%e0%ae%af%e0%af%81%e0%ae%ae%e0%af%8d-%e0%ae%aa/</epub>
+		<pdf>http://freetamilebooks.com/download/%e0%ae%85%e0%ae%b2%e0%af%88%e0%ae%af%e0%af%81%e0%ae%ae%e0%af%8d-%e0%ae%ae%e0%ae%a9%e0%ae%ae%e0%af%81%e0%ae%ae%e0%af%8d-%e0%ae%b5%e0%ae%a4%e0%ae%bf%e0%ae%af%e0%af%81%e0%ae%ae%e0%af%8d-%e0%ae%aa-4/</pdf>
+		<category />
+		<date />
+		</book>
+
+
 
 		<book>
 		<bookid>3c8da94b-c685-418f-a417-bdb8a105dc06</bookid>
