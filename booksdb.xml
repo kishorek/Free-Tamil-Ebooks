@@ -1,6 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <books>	
 	
+	
+		<book>
+		<bookid>2a634389-a999-4a8a-bb5a-f84705e6d48a</bookid>
+		<title>எளிய தமிழில் WordPress</title>
+		<author>தமிழ்</author>
+		<image>http://i2.wp.com/freetamilebooks.com/wp-content/uploads/2016/10/wordpress.jpg?resize=212%2C300</image>
+		<link>http://freetamilebooks.com/ebooks/learn-wordpress-in-tamil/</link>
+		<epub>http://freetamilebooks.com/download/%e0%ae%8e%e0%ae%b3%e0%ae%bf%e0%ae%af-%e0%ae%a4%e0%ae%ae%e0%ae%bf%e0%ae%b4%e0%ae%bf%e0%ae%b2%e0%af%8d-wordpress-epub/</epub>
+		<pdf>http://freetamilebooks.com/download/%e0%ae%8e%e0%ae%b3%e0%ae%bf%e0%ae%af-%e0%ae%a4%e0%ae%ae%e0%ae%bf%e0%ae%b4%e0%ae%bf%e0%ae%b2%e0%af%8d-wordpress-6-inch-pdf/</pdf>
+		<category> நுட்பம் </category>
+		<date />
+		</book>
+
+
+		<book>
+		<bookid>04a1c214-c0ca-49b9-b2f2-ba777aadd3f5</bookid>
+		<title>எளிய தமிழில் Selenium</title>
+		<author>து.நித்யா</author>
+		<image>http://i0.wp.com/freetamilebooks.com/wp-content/uploads/2016/10/selenium-cover-3d.jpg?resize=235%2C300</image>
+		<link>http://freetamilebooks.com/ebooks/learn-selenium-in-tamil/</link>
+		<epub>http://freetamilebooks.com/download/%e0%ae%8e%e0%ae%b3%e0%ae%bf%e0%ae%af-%e0%ae%a4%e0%ae%ae%e0%ae%bf%e0%ae%b4%e0%ae%bf%e0%ae%b2%e0%af%8d-selenium-epub/</epub>
+		<pdf>http://freetamilebooks.com/download/%e0%ae%8e%e0%ae%b3%e0%ae%bf%e0%ae%af-%e0%ae%a4%e0%ae%ae%e0%ae%bf%e0%ae%b4%e0%ae%bf%e0%ae%b2%e0%af%8d-selenium-6-inch-pdf/</pdf>
+		<category> நுட்பம் </category>
+		<date />
+		</book>
+
+		<book>
+		<bookid>c2d075c6-2ad4-4021-9f77-91c95f7c6833</bookid>
+		<title>புவியிலோரிடம் – நாவல்</title>
+		<author>பா.ராகவன்</author>
+		<image>http://i2.wp.com/freetamilebooks.com/wp-content/uploads/2016/10/Puviyiloridam.jpg?resize=225%2C300</image>
+		<link>http://freetamilebooks.com/ebooks/puviyiloridam/</link>
+		<epub>http://freetamilebooks.com/download/%e0%ae%aa%e0%af%81%e0%ae%b5%e0%ae%bf%e0%ae%af%e0%ae%bf%e0%ae%b2%e0%af%8b%e0%ae%b0%e0%ae%bf%e0%ae%9f%e0%ae%ae%e0%af%8d-%e0%ae%a8%e0%ae%be%e0%ae%b5%e0%ae%b2%e0%af%8d-%e0%ae%aa%e0%ae%be-%e0%ae%b0/</epub>
+		<pdf>http://freetamilebooks.com/download/%e0%ae%aa%e0%af%81%e0%ae%b5%e0%ae%bf%e0%ae%af%e0%ae%bf%e0%ae%b2%e0%af%8b%e0%ae%b0%e0%ae%bf%e0%ae%9f%e0%ae%ae%e0%af%8d-%e0%ae%a8%e0%ae%be%e0%ae%b5%e0%ae%b2%e0%af%8d-%e0%ae%aa%e0%ae%be-%e0%ae%b0-4/</pdf>
+		<category> புதினங்கள் </category>
+		<date />
+		</book>
+	
 		<book>
 		<bookid>643e01dc-eed9-4d29-9cc1-ce2c92dc84ac</bookid>
 		<title>தருமபுரி வட்டார நாட்டுப்புற மருத்துவம்</title>
