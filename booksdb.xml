@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <books>	
 	
-
-	
 	<book>
 	<bookid>da1dfde6-b278-4ff1-a6d5-b57bdd96cab2</bookid>
 	<title>அலிபாபா </title>
@@ -13,7 +11,7 @@
 	<pdf />
 	<category>சிறுவர் நூல்கள்</category>
 	<date />
-	<book />
+	</book>
 
 
 
@@ -27,7 +25,7 @@
 	<pdf />
 	<category>இலக்கியம்</category>
 	<date />
-	<book />
+	</book>
 
 
 	<book>
@@ -40,7 +38,7 @@
 	<pdf />
 	<category>கவிதைகள்</category>
 	<date />
-	<book />
+	</book>
 
 
 	<book>
@@ -53,7 +51,7 @@
 	<pdf />
 	<category>இலக்கியம்</category>
 	<date />
-	<book />
+	</book>
 
 
 	<book>
@@ -66,7 +64,7 @@
 	<pdf />
 	<category>பயணக் கட்டுரை</category>
 	<date />
-	<book />
+	</book>
 
 
 
@@ -80,7 +78,7 @@
 	<pdf />
 	<category>பயணக் கட்டுரை</category>
 	<date />
-	<book />
+	</book>
 
 
 
@@ -96,7 +94,7 @@
 	<pdf />
 	<category>கவிதைகள்</category>
 	<date />
-	<book />
+	</book>
 
 
 	<book>
@@ -109,7 +107,7 @@
 	<pdf />
 	<category>கவிதைகள்</category>
 	<date />
-	<book />
+	</book>
 
 
 	<book>
@@ -122,7 +120,7 @@
 	<pdf />
 	<category>கவிதைகள்</category>
 	<date />
-	<book />
+	</book>
 
 
 	<book>
@@ -135,7 +133,7 @@
 	<pdf />
 	<category>ஆன்மிகம்,பயணக் கட்டுரை</category>
 	<date />
-	<book />
+	</book>
 
 
 
@@ -149,7 +147,7 @@
 	<pdf />
 	<category>ஆன்மிகம்,மரபுக் கவிதை</category>
 	<date />
-	<book />
+	</book>
 
 
 
@@ -163,7 +161,7 @@
 	<pdf />
 	<category>நாவல்</category>
 	<date />
-	<book />
+	</book>
 
 
 	<book>
@@ -176,7 +174,7 @@
 	<pdf />
 	<category>கவிதைகள்</category>
 	<date />
-	<book />
+	</book>
 
 
 
@@ -190,7 +188,7 @@
 	<pdf />
 	<category>கட்டுரைகள்</category>
 	<date />
-	<book />
+	</book>
 
 
 
@@ -205,7 +203,7 @@
 	<pdf />
 	<category>கவிதைகள்</category>
 	<date />
-	<book />
+	</book>
 
 
 
@@ -219,7 +217,7 @@
 	<pdf />
 	<category>கட்டுரைகள்</category>
 	<date />
-	<book />
+	</book>
 
 
 
@@ -234,7 +232,7 @@
 	<pdf />
 	<category>உளவியல்,கட்டுரைகள்</category>
 	<date />
-	<book />
+	</book>
 
 
 
@@ -248,7 +246,7 @@
 	<pdf />
 	<category>குறுநூல்,நாவல்</category>
 	<date />
-	<book />
+	</book>
 
 
 
@@ -262,7 +260,7 @@
 	<pdf />
 	<category>கட்டுரைகள்,கணிணி நுட்பம்</category>
 	<date />
-	<book />
+	</book>
 
 
 
@@ -276,7 +274,7 @@
 	<pdf />
 	<category>கட்டுரைகள்</category>
 	<date />
-	<book />
+	</book>
 
 
 
@@ -290,7 +288,7 @@
 	<pdf />
 	<category>கட்டுரைகள்,வரலாறு</category>
 	<date />
-	<book />
+	</book>
 
 
 
@@ -304,7 +302,7 @@
 	<pdf />
 	<category>ஆன்மிகம்,பயணக் கட்டுரை</category>
 	<date />
-	<book />
+	</book>
 
 
 
@@ -318,7 +316,7 @@
 	<pdf />
 	<category>கட்டுரைகள்</category>
 	<date />
-	<book />
+	</book>
 
 
 	<book>
@@ -331,7 +329,7 @@
 	<pdf />
 	<category>கட்டுரைகள்</category>
 	<date />
-	<book />
+	</book>
 
 
 
@@ -345,7 +343,7 @@
 	<pdf />
 	<category>மின்னிதழ்</category>
 	<date />
-	<book />
+	</book>
 
 
 
@@ -359,7 +357,7 @@
 	<pdf />
 	<category>விவசாயம்</category>
 	<date />
-	<book />
+	</book>
 
 
 
@@ -373,7 +371,7 @@
 	<pdf />
 	<category>அரசியல்,கட்டுரைகள்,கம்யூனிசம்</category>
 	<date />
-	<book />
+	</book>
 
 
 
@@ -387,7 +385,7 @@
 	<pdf />
 	<category>கட்டுரைகள்</category>
 	<date />
-	<book />
+	</book>
 
 
 
@@ -401,7 +399,7 @@
 	<pdf />
 	<category>உடல் நலம்,கட்டுரைகள்,நலம்,மன நலம்</category>
 	<date />
-	<book />
+	</book>
 
 
 
@@ -415,7 +413,7 @@
 	<pdf />
 	<category>அறிவியல்,விண்வெளி</category>
 	<date />
-	<book />
+	</book>
 
 
 	<book>
@@ -428,10 +426,10 @@
 	<pdf />
 	<category>கவிதைகள்</category>
 	<date />
-	<book />
+	</book>
 
 
-		
+	
 	
 	<book>
 		<bookid>e819857e-983c-40ba-a273-d98457ed3015</bookid>
